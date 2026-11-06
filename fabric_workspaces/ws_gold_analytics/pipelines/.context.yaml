@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_gold_analytics/pipelines
+role: gold_dimensional
+purpose: Contenedor base para artefactos *.DataPipeline de refresco analitico dimensional y actualizacion de modelos Gold.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.DataPipeline encargadas de actualizar dimensiones, tablas de hechos y refrescar modelos semanticos.
+

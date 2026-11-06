@@ -3,7 +3,7 @@
     ".": {
       "beacon_chain_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "beacon_hash": "29e02afbcbc4a62b3d955593f853063b09bd47dfaac65d45221ae9ff2f1be606",
-      "fingerprint": "4a90b7fa733878e782d4a97c56bfd28975c9862e88f70e87f58be04ec89e9b90",
+      "fingerprint": "38c6378e91e5cf4faa7997937a3efc4ced0e50b179b75eb8489460fe667b7502",
       "pack": {
         "crawl": true,
         "edges": {
@@ -32,12 +32,12 @@
     "01_seed": {
       "beacon_chain_hash": "ec61a73b6874c677ed728706fd64cb5627d87201654606a1181f709f9888cc24",
       "beacon_hash": "83363c99d5a121e08939d2b005ecac33760c5c1f9b1af3d88f71ff9ea2f5bd3d",
-      "fingerprint": "d0bca2abdd1dcff58534989a919b2387d147b2e11f479ae3b48129c817516241",
+      "fingerprint": "cd0f0269da88d69fde2ffa251a1cc3f6147168092f9482f77e7caf6f7fefd504",
       "pack": {
         "crawl": true,
         "edges": {},
         "files": [
-          "seed-idirectoryfabric-master.md(~4367t)"
+          "seed-idirectoryfabric-master.md(~4984t)"
         ],
         "focus": "01_seed",
         "idir_pack": "6.0",
@@ -51,7 +51,7 @@
     "artifacts": {
       "beacon_chain_hash": "b712c56187912ad28dacd707ae67e524e750a5866005351bbbe22f521c0815fd",
       "beacon_hash": "1c27fb78f03b685610c9fbd91504da3b1fccaf5ac011d9f89fb8c94cc3f69da0",
-      "fingerprint": "8b743ff06d968a03f907cc503ac44bd15d4eb3499d7d6b7f0e165fb14c540140",
+      "fingerprint": "e9a2f6d9ae2412e04ab83c28037e439da24fc00538c3949830a4489a58e0cf4f",
       "pack": {
         "crawl": true,
         "edges": {
@@ -73,7 +73,7 @@
     "artifacts/benchmarks": {
       "beacon_chain_hash": "0cf18853dd49dabd25eb12cb6e8df346019268695240bec652677884a9a0b02f",
       "beacon_hash": "8fc836fa63cd66ae150a82563e54573a59c75b95859227d23c32ccff11cbd874",
-      "fingerprint": "d642d2551172de8ba69115403025a2a5c3923387d349f5b07b04ce92283192ed",
+      "fingerprint": "f2fb00cac8a169e53f7e7c9b68ef266b583f1af25bf91d4053d40aee89fda193",
       "pack": {
         "crawl": true,
         "edges": {
@@ -100,7 +100,7 @@
     "artifacts/plans": {
       "beacon_chain_hash": "fb18840ae8ee15ffde0d43ac1efea6f29106582bf1a9a4700b8fec12d4793a1b",
       "beacon_hash": "8a8cff52812648899a01af9da32f84f7f3ac49645ba7e729092b8dd2e1881f4a",
-      "fingerprint": "a33cf468de0ae5ef3c1c1f8f28f07dae581366bc34cf5d56c03a265e691198db",
+      "fingerprint": "44abf90a3a5dda44533ef1a196736d61ea6a848ab03768128551c2c282c84980",
       "pack": {
         "crawl": true,
         "edges": {
@@ -123,7 +123,7 @@
     "artifacts/plans/active": {
       "beacon_chain_hash": "dd279d09e43cc951ce084df2699ddb024f66d074ab393684261ae581fd303bd8",
       "beacon_hash": "4099ccf8eeb2b31acd32ca9fe98dc35988cc70c149825027948b31a8bf8406f4",
-      "fingerprint": "e1f6bd6491bc7d9c0d0145c0baadceac799c66769f8525767e61ff1da082aafb",
+      "fingerprint": "2566974a1f20999e70068bbe98da2ea1d91be4165c7eaed53c64a30d65c94e32",
       "pack": {
         "crawl": true,
         "edges": {
@@ -145,7 +145,7 @@
     "artifacts/plans/openia": {
       "beacon_chain_hash": "f5dafb5a41544eee8aa8cc8237028e786ad7310397c05c457db419258fb66346",
       "beacon_hash": "657ab6156bcab1982842f9c849e72c718281272645036b04bd4ea9bf2c22509c",
-      "fingerprint": "af29b7e6ca205b3f93f89e18334fd6dca8dc78d3cafc1c40e51a025fa1b0b0a3",
+      "fingerprint": "e6915c8adad937b8a5b71c49e7f52113df6f6b901254be90c9cef377b5afcc11",
       "pack": {
         "crawl": true,
         "edges": {
@@ -167,7 +167,7 @@
     "config": {
       "beacon_chain_hash": "ceabe8ac96ad505fb82d97ea542c4c35d50a4c572bfb507ff2e33e6e3f23bf32",
       "beacon_hash": "6c2651b95e2d4b9daa0c4c6ed9fc950355fafa09491a7f72fd7351e29a0684e9",
-      "fingerprint": "7d9e10a1066a5dd5242cc28ef7a9edbe72458d1b0fa5551dee53b32bd42f209f",
+      "fingerprint": "de159a0d87738cc28da23e2319b427e7c362ad081dcc101b1efeef0324d898a2",
       "pack": {
         "crawl": true,
         "edges": {},
@@ -186,7 +186,7 @@
     "docs": {
       "beacon_chain_hash": "6317216f276a6094b4ff7e3c8b984c330768ed6f05a9bda7d4e8c08100c348db",
       "beacon_hash": "4e29d13909f0f78ed4a7526ed4c6f9064abb3ccd6ee4c8467a4badc3cd3209b4",
-      "fingerprint": "8d76c294101c822b53d51b42b8ff8e7f2e21c60542ef964f9a700d865236a8e6",
+      "fingerprint": "00156a710cbf2be8baa8938f00d2e4a92c4a9d4e7023482cfe6d9702d961004f",
       "pack": {
         "crawl": true,
         "edges": {
@@ -207,16 +207,16 @@
     "docs/architecture": {
       "beacon_chain_hash": "616f5eb96b14d0fc27bea2ab6157774c828cbf28ac8c0e70c759b157c100b181",
       "beacon_hash": "579ac3a434b5f233b8ab64811f475dcc1275ed6df7c60a959dc7dcd62e8e8d90",
-      "fingerprint": "a4f93bfe7a7e35b147dba10d2e384833169ef6f602b70ca1bb1b658a4b5b176a",
+      "fingerprint": "b1f518b5f6a9385b6ac3072530d022377193e95ca855591050e2b8343b21010d",
       "pack": {
         "crawl": true,
         "edges": {
           "docs": "parent"
         },
         "files": [
-          "Directorio de carpetas.md(~929t)",
-          "folder_manifest.json(~3057t)",
-          "folder_manifest.yaml(~977t)"
+          "Directorio de carpetas.md(~1221t)",
+          "folder_manifest.json(~2128t)",
+          "folder_manifest.yaml(~1515t)"
         ],
         "focus": "docs/architecture",
         "idir_pack": "6.0",
@@ -231,7 +231,7 @@
     "docs/notes": {
       "beacon_chain_hash": "8e769560aea5a62afcb49a4fafe7dc902f7f02986513674c34c1797d5983f024",
       "beacon_hash": "0f908d7156270d3f06214795029bafbef351231876d83e1341f0d353fbb1f704",
-      "fingerprint": "cadc79af78f4b5e0539a46db1c0baa0c8c81c46f7f9828988e2a4f019cd38a26",
+      "fingerprint": "1ee5e1d941706b9ac12dcb718d4d6d6c7886c2fe57277d70c35cb267d745e4ee",
       "pack": {
         "crawl": true,
         "edges": {
@@ -251,7 +251,7 @@
     "docs/specs": {
       "beacon_chain_hash": "4ff20867668ab6e5924242804fe4cc1e878c0402a169ae0b2338e25a00b95c6a",
       "beacon_hash": "d399e0fc46ebb7ba355d1446f1807e77fd98f1e6837057a5c0ea09116293f465",
-      "fingerprint": "6111addb162cb50d5bbd635efd54982544960708eaebe08a3ed18a421b66eeb5",
+      "fingerprint": "306b05a0fdb1b0b27bec639931731afe7d9b6f0fb93607be0a41b5ac54830c02",
       "pack": {
         "crawl": true,
         "edges": {
@@ -274,9 +274,9 @@
       }
     },
     "fabric_workspaces": {
-      "beacon_chain_hash": "39e9afbc351eac05b475abf6f10000e8d4054fb8cad801436cbd464e9edeea89",
-      "beacon_hash": "7789f3fccf38c69a17d90b73af879c08349fad408f6b41c550668989e8eeb704",
-      "fingerprint": "df6060a2d705de20d21a24acc06e68b396ac2f0a4ef61ee01fb6883073544c83",
+      "beacon_chain_hash": "3b2e18e02121c3c9f8f1ed04844a86fd49ab6d04b4e6d094b99a01fe4bfaa5a3",
+      "beacon_hash": "618453fd3124c4eee080f5aba49c34c69ed71947d342704f8a191f798f622e74",
+      "fingerprint": "a9595efad3537365a8bec0245f45fd64b03c51062de24f69b0ec36030dc341c4",
       "pack": {
         "crawl": true,
         "edges": {
@@ -287,7 +287,7 @@
         "files": [],
         "focus": "fabric_workspaces",
         "idir_pack": "6.0",
-        "instructions": "Extensión de dominio activa. Enriquecer con /idir enrich si añade contratos.",
+        "instructions": "Raiz de workspaces de Microsoft Fabric. Vincular cada subcarpeta ws_* a un Workspace en Fabric Git Integration.",
         "prio": "p1",
         "role": "domain_extension",
         "seed_ref": "optional",
@@ -295,88 +295,61 @@
       }
     },
     "fabric_workspaces/ws_bi_semantic": {
-      "beacon_chain_hash": "9d8e0fe1e907b261542d289a57e4e5d934f72bdcc72bea8cea97bf731a55e9f4",
-      "beacon_hash": "defa0ceda68e9b6203c8ba6c9ab61cafe4d6def2b53c3dc4bba5f347de7cd86f",
-      "fingerprint": "6cd6b6d953e75f8d26a9d2fbd0b55e00f5785c834f5fae104e2a24f63bc40933",
+      "beacon_chain_hash": "5e75ae864aabbda71427169640116d10111164777377b25fecebc071570fff4a",
+      "beacon_hash": "b1c4c982b4b3bc6e851d1092765f52ff1e6fb22ed7e4393ae4f320dd8399e60e",
+      "fingerprint": "136c2922a18fa5479d13c4917b80928dd8c6556fee439ce6dd8eef8a6582cbd7",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces": "parent",
-          "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report": "child",
-          "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel": "child"
+          "fabric_workspaces/ws_bi_semantic/reports": "child",
+          "fabric_workspaces/ws_bi_semantic/semantic_models": "child"
         },
         "files": [],
         "focus": "fabric_workspaces/ws_bi_semantic",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces",
-        "instructions": "Hereda directivas de fabric_workspaces/.",
+        "instructions": "Ubicar SemanticModels TMDL en semantic_models/ y reportes Power BI PBIR/PBIP en reports/. Evitar columnas calculadas DAX",
         "prio": "p1",
         "role": "bi_semantic",
         "seed_ref": "optional",
         "tier": "1a"
       }
     },
-    "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report": {
-      "beacon_chain_hash": "99c5b7603da125d89bb8a20fed454a5ac8cfccb050f18ee07f99af87ac6b7604",
-      "beacon_hash": "df99edbb7be343d6312f8efb962ad9a874e7e74df9e0dbd3388ed37d04c8d690",
-      "fingerprint": "3bf4b2ff3c4d13cb0e1f3551c93b36ab3f328e2161c906212a25bfbf7963580d",
+    "fabric_workspaces/ws_bi_semantic/reports": {
+      "beacon_chain_hash": "fee7b34a299d34f2e0d2f4284a28880da5db29681def37e073187f425f917687",
+      "beacon_hash": "5d0f234f4058a8292cd979d869d078c78d6c473e5bc4cac2786c76935d3a08f3",
+      "fingerprint": "5aa94ce0b60fdd60cef1cf4929d8344c20c83cb12ceb1229a6252cdb9e8c5c61",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces/ws_bi_semantic": "parent"
         },
-        "files": [
-          "definition.pbir(~38t)"
-        ],
-        "focus": "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report",
+        "files": [],
+        "focus": "fabric_workspaces/ws_bi_semantic/reports",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces/ws_bi_semantic",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_bi_semantic/.",
+        "instructions": "Alojar aqui carpetas *.Report (definition.pbir) vinculadas por ruta relativa (byPath) a semantic_models/. No versionar .",
         "prio": "p1",
         "role": "bi_semantic",
         "seed_ref": "optional",
         "tier": "1a"
       }
     },
-    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel": {
-      "beacon_chain_hash": "d21fee6ee5b536e8bea55018d480d572e6a5c6b72b0e1407a5d8540a4d0967c9",
-      "beacon_hash": "9018585b34c07b72491b996f042661d6003c5e9d7261c158e3bc9842a1584506",
-      "fingerprint": "d08b064bcb72949153aa62ba5e3b9f55ed319ca2cc810a14d39749fd25d44c42",
+    "fabric_workspaces/ws_bi_semantic/semantic_models": {
+      "beacon_chain_hash": "e3dafdacc58c958e67681709fd19d65a13f0f97290fd1bdb087135a9fa8aebe3",
+      "beacon_hash": "3c4204af0e1f1b4061338a4b97e9157e7b03223f24b97c6550c3427dc1eb3e2c",
+      "fingerprint": "331d93c24ab40e57aa5d7833f9c100ab56fabce03cde40ffa2ab294b4c44f553",
       "pack": {
         "crawl": true,
         "edges": {
-          "fabric_workspaces/ws_bi_semantic": "parent",
-          "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition": "child"
+          "fabric_workspaces/ws_bi_semantic": "parent"
         },
-        "files": [
-          "definition.pbism(~22t)"
-        ],
-        "focus": "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel",
+        "files": [],
+        "focus": "fabric_workspaces/ws_bi_semantic/semantic_models",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces/ws_bi_semantic",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_bi_semantic/.",
-        "prio": "p1",
-        "role": "bi_semantic",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition": {
-      "beacon_chain_hash": "c9c9679f190fad8f0b29812a4cc6eaa10713067322773959fc1a341dff0b5650",
-      "beacon_hash": "d3ca5bba969e9d3ce1b2e6c128b3c12ce7bd4c7b1320af6988be7d36888d9285",
-      "fingerprint": "87034de169725bb6a01909ed6200a3666122ea9fca67da3804e3ee21f6dd09ee",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel": "parent"
-        },
-        "files": [
-          "model.tmdl(~104t)"
-        ],
-        "focus": "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition",
-        "idir_pack": "6.0",
-        "inherited_from": "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/.",
+        "instructions": "Alojar aqui carpetas *.SemanticModel (definition.pbism y definition/*.tmdl). Prohibido usar columnas calculadas DAX (RUL",
         "prio": "p1",
         "role": "bi_semantic",
         "seed_ref": "optional",
@@ -384,63 +357,121 @@
       }
     },
     "fabric_workspaces/ws_bronze_ingest": {
-      "beacon_chain_hash": "cb1e2ae88fb89e134736bf8acd43fa1df4534c5f91dec139d098d6ddbdbd6409",
-      "beacon_hash": "ec79595644ed1fc7402e7d819dcca55335bdcb9402e9aff96a4bd12180bbcf2d",
-      "fingerprint": "71880952c1225cee0349ab045851cf805d826641a087808138683e0c696849f5",
+      "beacon_chain_hash": "60ec224c10fc913b710052fc6b0230385c791f9b17d25bf24c20a951a88e75ee",
+      "beacon_hash": "5de7a100b1d79d4cd574f67ddd1596eb9064a131fe0df5c5f9dfb423335cc11e",
+      "fingerprint": "1c9a52cf8874daecf72963575fb9d981779f4c4faca2dd80ebf7696694b7f351",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces": "parent",
-          "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse": "child",
-          "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline": "child"
+          "fabric_workspaces/ws_bronze_ingest/dataflows": "child",
+          "fabric_workspaces/ws_bronze_ingest/eventstreams": "child"
         },
         "files": [],
         "focus": "fabric_workspaces/ws_bronze_ingest",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces",
-        "instructions": "Hereda directivas de fabric_workspaces/.",
+        "instructions": "Ubicar Lakehouses en lakehouses/, DataPipelines en pipelines/, Dataflows en dataflows/, Eventstreams en eventstreams/ y ",
         "prio": "p1",
         "role": "bronze_ingestion",
         "seed_ref": "optional",
         "tier": "1a"
       }
     },
-    "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse": {
-      "beacon_chain_hash": "6117956fea3b7e00698ab951810eced69f847dc5dcdef00d8621666b09dcc8ee",
-      "beacon_hash": "ebe14556cf4a7af2e63cac926e2b64f73229b16243adf264f967ee65c04cc6e3",
-      "fingerprint": "1dc7bd769d7133292df903f87cd10729a4612d4005e3a6b2a051a2302dcad934",
+    "fabric_workspaces/ws_bronze_ingest/dataflows": {
+      "beacon_chain_hash": "1a40bfb7e0dd43741b5fd5ea3f67b9e2b6ed860116d6535f1a72f78e76866c94",
+      "beacon_hash": "86709791925543e530aef8eeaf63e2b2b6f8d1103a186a753ec92141b5d8e8a8",
+      "fingerprint": "8253e3cb8fc346a984f5572038a0553b377d0d5058040210b046c2d2bf352729",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces/ws_bronze_ingest": "parent"
         },
         "files": [],
-        "focus": "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse",
+        "focus": "fabric_workspaces/ws_bronze_ingest/dataflows",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces/ws_bronze_ingest",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_bronze_ingest/.",
+        "instructions": "Alojar aqui artefactos *.Dataflow con su archivo .platform y mashup.pq / definicion JSON.",
+        "prio": "p2",
+        "role": "bronze_ingestion",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bronze_ingest/eventstreams": {
+      "beacon_chain_hash": "b6be5db186c309c43673c737d1a1ea1bac207837ec1cada2612fa53054f9c481",
+      "beacon_hash": "c1f0407af1c1c055079791c5ab395aaf3eaeb96c535868ae4528fa9a2ee97ede",
+      "fingerprint": "ac3638025c3e65d285c5e92b71dcb9ae018e07f69edd59b09a105037bfedb205",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bronze_ingest": "parent"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_bronze_ingest/eventstreams",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bronze_ingest",
+        "instructions": "Alojar aqui artefactos de streaming y Database Mirroring hacia OneLake Bronze.",
+        "prio": "p2",
+        "role": "bronze_ingestion",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bronze_ingest/lakehouses": {
+      "beacon_chain_hash": "2bb78aeae71f475a92eb7ec9d51255f571e717ee9e87a5154b49f4881b4475f1",
+      "beacon_hash": "e9cd8c75a61f679d923a9eda8156e748598af9972d04703deef38d649868481c",
+      "fingerprint": "08e5db9ceb910af01a82fdb6c05907c0a67f46246a99c83aeee929eb445b5b0c",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bronze_ingest": "parent"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_bronze_ingest/lakehouses",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bronze_ingest",
+        "instructions": "Alojar aqui artefactos *.Lakehouse de aterrizaje crudo (append-only) con sus archivos .platform y shortcuts.metadata.jso",
         "prio": "p1",
         "role": "bronze_ingestion",
         "seed_ref": "optional",
         "tier": "1a"
       }
     },
-    "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline": {
-      "beacon_chain_hash": "64b90703ffb40ac4163e777c9eeacd16fd751f1ab756c4ff518d2a4ef7f6d246",
-      "beacon_hash": "fb4850c29b9ed1bb3b581eb02ec48677dba04e334ab1d135b004d68a0a853535",
-      "fingerprint": "42dc887a0d8652a6344946ea6d29730b3f9816e9784e57a5b366b59fe38a4602",
+    "fabric_workspaces/ws_bronze_ingest/notebooks": {
+      "beacon_chain_hash": "0c878134a03c6cf0ca2b7704e273a305ecabff13e23dfe674c29383a86f7ff6b",
+      "beacon_hash": "ca0fd27c80105b5653512ac702e5666dba47dcc086c13fc12d1e33bb1bada6b9",
+      "fingerprint": "1cbff212fcbd7dedc009b8711f02838080f80ec6f10b2a190f316330524910c7",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces/ws_bronze_ingest": "parent"
         },
-        "files": [
-          "pipeline-content.json(~181t)"
-        ],
-        "focus": "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline",
+        "files": [],
+        "focus": "fabric_workspaces/ws_bronze_ingest/notebooks",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces/ws_bronze_ingest",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_bronze_ingest/.",
+        "instructions": "Alojar aqui carpetas *.Notebook (notebook-content.py) de ingesta Bronze con metadatos de auditoria (_ingested_at, _batch",
+        "prio": "p1",
+        "role": "bronze_ingestion",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bronze_ingest/pipelines": {
+      "beacon_chain_hash": "2058a3c46305bed81060dad5b3deb449d07db7d46bab02598711aef75a16088d",
+      "beacon_hash": "7c313af76bbcdff62edeead512ea4a781128f91859810a59bc43aa7ea01b60da",
+      "fingerprint": "b301b581e88da76de6a3ae4688195117fac8ecc97301a5006714a7e210f88e85",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bronze_ingest": "parent"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_bronze_ingest/pipelines",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bronze_ingest",
+        "instructions": "Alojar aqui carpetas *.DataPipeline con pipeline-content.json. Respetar limite de concurrencia F8 (RULE-F8-07).",
         "prio": "p1",
         "role": "bronze_ingestion",
         "seed_ref": "optional",
@@ -448,84 +479,41 @@
       }
     },
     "fabric_workspaces/ws_core_governance": {
-      "beacon_chain_hash": "5b23cc044990715dff379c0e5ed200c46763834e63a869136e7db2a5b0be24c2",
-      "beacon_hash": "8a27c424eea1d7bfb0a02049fdbf6686fba0b4d1cc4b8e9fd7d9a9717374be73",
-      "fingerprint": "4e70574c89be1a5928bcbacb6bae3b6f785710901770ea3f53b562b358423f7b",
+      "beacon_chain_hash": "f2915b2ec15de49d0e364584cbae15677f7cd8a8fad0066620260c10847b6648",
+      "beacon_hash": "6f8571e9f3e96151a5c657f83fbd106acd4ef448f2642235944dd081716565c9",
+      "fingerprint": "a1a405c6e72c118cd7efafac7d38959a6f5978d65082c40e0ad04f0e8633dc97",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces": "parent",
-          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment": "child",
+          "fabric_workspaces/ws_core_governance/environments": "child",
           "fabric_workspaces/ws_core_governance/libraries": "child"
         },
         "files": [],
         "focus": "fabric_workspaces/ws_core_governance",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces",
-        "instructions": "Hereda directivas de fabric_workspaces/.",
+        "instructions": "Depositar Environments en environments/, paquetes en libraries/ y notebooks de administracion en notebooks/.",
         "prio": "p1",
         "role": "core_governance",
         "seed_ref": "optional",
         "tier": "1a"
       }
     },
-    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment": {
-      "beacon_chain_hash": "9c54e5ebb02a86321cbdf1c4a0d5b095da0e8ae38058232fd3dd3ebe2f1ae01b",
-      "beacon_hash": "993ea90a98b3cfdba1020649d68a1ea8709fa83b78ff5e20cd09736c567fc20e",
-      "fingerprint": "296d3a8bd6e66e0122d5638adb1485f1d3f5ea85180f64ca3e05792458ccf56b",
+    "fabric_workspaces/ws_core_governance/environments": {
+      "beacon_chain_hash": "90b43dc2987017d3e532f26b3b70f8747681983c0d1c9ee08b72fdc02c59f4d4",
+      "beacon_hash": "05624919aa7e563f7f2011f490cc944c7bf0d7126713c30c94102c54fa68ad91",
+      "fingerprint": "b0263dedcd3115fff0a38809aa9fdf8abf0c47573b0c154d9728eb11624de5e5",
       "pack": {
         "crawl": true,
         "edges": {
-          "fabric_workspaces/ws_core_governance": "parent",
-          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting": "child"
+          "fabric_workspaces/ws_core_governance": "parent"
         },
         "files": [],
-        "focus": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment",
+        "focus": "fabric_workspaces/ws_core_governance/environments",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces/ws_core_governance",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/.",
-        "prio": "p1",
-        "role": "core_governance",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting": {
-      "beacon_chain_hash": "4213c6ace82f1f8dcd4f488428fab10af863ca229034a95dbde76277dd73f28f",
-      "beacon_hash": "c6c5bb764723c3dcfa06c18b4bf8d01cbe3a76678b334da5c8f5a6f3fef5c335",
-      "fingerprint": "84bc7261372e0415cc1c38bce776f50dae1aaef27bd59816401f7518c2c0fd01",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment": "parent"
-        },
-        "files": [],
-        "focus": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting",
-        "idir_pack": "6.0",
-        "inherited_from": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/.",
-        "prio": "p1",
-        "role": "core_governance",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/spark": {
-      "beacon_chain_hash": "8ff0c2ee5d1e4246536d0612e23402dd4bd8e5add87254dcd2f474631bcd2629",
-      "beacon_hash": "3ad5a9343ce6b332d6341ca0a62939cbe45106ecef6a21160e654b2e4856bf98",
-      "fingerprint": "1dd459104e926e33f0544b48c321a6ae2f1a8411a6154de37e1ddcc435700b9f",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting": "parent"
-        },
-        "files": [
-          "compute.json(~139t)"
-        ],
-        "focus": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/spark",
-        "idir_pack": "6.0",
-        "inherited_from": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/.",
+        "instructions": "Alojar aqui los directorios *.Environment con su archivo .platform y configuracion Spark compute.json.",
         "prio": "p1",
         "role": "core_governance",
         "seed_ref": "optional",
@@ -533,21 +521,39 @@
       }
     },
     "fabric_workspaces/ws_core_governance/libraries": {
-      "beacon_chain_hash": "440784280fccc19718f3992250d32b342fbd211ed7857738ed8fbfadfff263da",
-      "beacon_hash": "ef15e19d2ef2354441c5f97a8d67d949f6b433ca664879cd20f1df6e867ab4c0",
-      "fingerprint": "a0a05578945ba5dff8e9af25bf7d1a6a6c1731caa18fac9a4c5ed34d441cc4be",
+      "beacon_chain_hash": "ccd8958a008108e80bb0d249f0cc55167339ee761d4c5f6e39b9a5020e832c76",
+      "beacon_hash": "cd5b7e477996a5ebf1588b452f19eea63c764b347746a49db84ce07d75e61120",
+      "fingerprint": "0bea017ae05c2cecaa6bc235c3a2ef545e1349002472e35b7e0d8a1533af9309",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces/ws_core_governance": "parent"
         },
-        "files": [
-          "santolaya_chile_utils.py(~418t)"
-        ],
+        "files": [],
         "focus": "fabric_workspaces/ws_core_governance/libraries",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces/ws_core_governance",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/.",
+        "instructions": "Alojar aqui paquetes reutilizables de validacion, calidad de datos y helpers de PySpark para todos los workspaces.",
+        "prio": "p1",
+        "role": "core_governance",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_core_governance/notebooks": {
+      "beacon_chain_hash": "e44999f0dd06649746f7a25cadcad7913407d23e9a264cac863d72d69f2a1a11",
+      "beacon_hash": "92005a3fa72a764d8017c56d31ebdb42f7baaa0dbc5b32fb37c180b9bf9f2363",
+      "fingerprint": "b6aa6ef265243e2b1a0b192a34f0e6bf3657c7e2594c60fadc0d49a3541a9981",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_core_governance": "parent"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_core_governance/notebooks",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_core_governance",
+        "instructions": "Alojar aqui artefactos *.Notebook de mantenimiento semanal Delta Lake (RULE-F8-05) y monitoreo de capacidad.",
         "prio": "p1",
         "role": "core_governance",
         "seed_ref": "optional",
@@ -555,63 +561,41 @@
       }
     },
     "fabric_workspaces/ws_gold_analytics": {
-      "beacon_chain_hash": "bde8b733c3f8b145d81e09ab954fdbd9f1d993cff310894558d6ad6703bcc702",
-      "beacon_hash": "5506a5770e546085b70ab18815df738ba3cd419eecf1af4614e0af83c9c06aa9",
-      "fingerprint": "a0874699255965d6278e80c299e5e56a30b7cf5314961bc573231c60c4ced344",
+      "beacon_chain_hash": "64eaa6b290988e314c95f6a288bab65b5d5dfaf58da806ca36d89bcce2847506",
+      "beacon_hash": "188bb1439182cf3a7e3ee6ee567effc36e6a93f966481ffc6578b3c3daa5177f",
+      "fingerprint": "b1ac22e3a165c5c6db9c960b09e89732a0d4f076ffc7337d79955eecf4057e27",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces": "parent",
-          "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook": "child",
-          "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse": "child"
+          "fabric_workspaces/ws_gold_analytics/lakehouses": "child",
+          "fabric_workspaces/ws_gold_analytics/notebooks": "child"
         },
         "files": [],
         "focus": "fabric_workspaces/ws_gold_analytics",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces",
-        "instructions": "Hereda directivas de fabric_workspaces/.",
+        "instructions": "Ubicar Lakehouses Gold en lakehouses/, Warehouses T-SQL en warehouses/, Notebooks dimensionales en notebooks/ y Pipeline",
         "prio": "p1",
         "role": "gold_dimensional",
         "seed_ref": "optional",
         "tier": "1a"
       }
     },
-    "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook": {
-      "beacon_chain_hash": "e4a72fdb2ad7d48cd93ab660838dbfca03c5838dd173dce4ab262e63df93a0e6",
-      "beacon_hash": "20fe7688dd8b10b73cbfe768a5bb84774a1031e3d471db14058798db79a7fa05",
-      "fingerprint": "b3bb7cfd3087d3955c73019a0db9de6d341219845eeb800d4367a13917a27f0d",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "fabric_workspaces/ws_gold_analytics": "parent"
-        },
-        "files": [
-          "notebook-content.py(~439t)"
-        ],
-        "focus": "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook",
-        "idir_pack": "6.0",
-        "inherited_from": "fabric_workspaces/ws_gold_analytics",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_gold_analytics/.",
-        "prio": "p1",
-        "role": "gold_dimensional",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse": {
-      "beacon_chain_hash": "f7b6352b7f88153750fc9197bc3576934f30a15fa35a3d7bcd554b45f63ad865",
-      "beacon_hash": "7483c0ec30a704db693da1182beec8cdc9af64300baf07e434631cd95072a0b3",
-      "fingerprint": "73412b54746da44ab0e8404679fac08ba1bed8a6b7f3cc56de8ed36bc8ca9e51",
+    "fabric_workspaces/ws_gold_analytics/lakehouses": {
+      "beacon_chain_hash": "859a0057a55533b0b8e17eed62a7df31e6d899aefb54cf0d242f1570efe89179",
+      "beacon_hash": "a079d90dd6be9bc167f3a275e5695df023219e7631d827074c4e021dc30c53d0",
+      "fingerprint": "e1a97a085c57468a633e7e34c5572504d5c282301d6e8c97c3a9182963dc16b7",
       "pack": {
         "crawl": true,
         "edges": {
           "fabric_workspaces/ws_gold_analytics": "parent"
         },
         "files": [],
-        "focus": "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse",
+        "focus": "fabric_workspaces/ws_gold_analytics/lakehouses",
         "idir_pack": "6.0",
         "inherited_from": "fabric_workspaces/ws_gold_analytics",
-        "instructions": "Hereda directivas de fabric_workspaces/ws_gold_analytics/.",
+        "instructions": "Alojar aqui artefactos *.Lakehouse Gold que sirven tablas de hechos y dimensiones directamente a modelos semanticos.",
         "prio": "p1",
         "role": "gold_dimensional",
         "seed_ref": "optional",
@@ -621,7 +605,7 @@
     "scripts": {
       "beacon_chain_hash": "bec0aa7880deb21e2f5162064cbba140e70b67f80090b9f2f7246ef5de003210",
       "beacon_hash": "d236725ac174c56326279ba8de0c15bdd98f853bd2fd5ba329fc73f8ac8a39f1",
-      "fingerprint": "f322ae28d095525fce248b53d274e6ac51a586e5351e8cff3b991c0b58299237",
+      "fingerprint": "34b09f793c3d6a23846c1b61073abdec6a2c9fe9a432bf31c5bb41d0c24021cd",
       "pack": {
         "crawl": true,
         "edges": {},
@@ -640,7 +624,7 @@
     "src": {
       "beacon_chain_hash": "98ac1252d59ae427f33430bd2b89584bc0458731919c34b7baba2da1bf3074db",
       "beacon_hash": "addcfad416dbf2ab0a8c4c70a14e7cac020e7fd5ba4fad95824e18f0a03430f2",
-      "fingerprint": "7536f74b9176ebb7f36ce1ab9ec85f40245b4261352ba1eb7ce866f28f2b5e0d",
+      "fingerprint": "4704d1c95c40f4dd845797b05629e1aca3a1015778f35737bf1e8ff4059289f6",
       "pack": {
         "crawl": true,
         "edges": {
@@ -660,7 +644,7 @@
     "src/core": {
       "beacon_chain_hash": "829405288781fa9f1a809c6c56043c2ec0247b5f9f44d89c27104a8ebb320146",
       "beacon_hash": "216ca5fb1a473346db22eef1a7dbdc12a2503b316191de44b943c7b932f0044c",
-      "fingerprint": "9734dbfa92aa7de948337a0262ff4799d7e44da05ad60359ade7558ce5d4255c",
+      "fingerprint": "31e9095718ea22464fe2c75d370f80ce5a75f27bcdcd210d585e3dc4d8a16466",
       "pack": {
         "crawl": true,
         "edges": {
@@ -668,7 +652,7 @@
         },
         "files": [
           "context_runtime.py(~5713t)",
-          "fwengine.py(~45143t)"
+          "fwengine.py(~45628t)"
         ],
         "focus": "src/core",
         "idir_pack": "6.0",
@@ -683,12 +667,12 @@
     "tests": {
       "beacon_chain_hash": "aae40b2cfe5b9735d23cd69fd2a9f23197625aceb5900b25cbb949c9de4f7b2a",
       "beacon_hash": "7e91a77a62b63ae5520c615174a49a5545610e1dd472efcac76c7e86bcd1079a",
-      "fingerprint": "7bbb60004a3c612819b5bf1ed1902764ffdb2971ab555922aa97514b284893eb",
+      "fingerprint": "6f377ece5b787b88d81fd31783fccff236dd79773b59ca051c0a952969296346",
       "pack": {
         "crawl": true,
         "edges": {},
         "files": [
-          "test_fwengine.py(~13702t)",
+          "test_fwengine.py(~14418t)",
           "test_token_budget.py(~2357t)"
         ],
         "focus": "tests",
@@ -701,7 +685,7 @@
       }
     }
   },
-  "generation": "04c7d01f4202e5d1",
+  "generation": "89c9b98d4357684e",
   "policy_stamp": [
     [
       ".agentignore",
@@ -710,13 +694,13 @@
     ],
     [
       ".gitignore",
-      201,
-      1793544365460800600
+      323,
+      1793973787526292800
     ],
     [
       "config/context_policy.json",
       3078,
-      1793968015409400500
+      1793968315567414700
     ]
   ],
   "version": "6.0.0"

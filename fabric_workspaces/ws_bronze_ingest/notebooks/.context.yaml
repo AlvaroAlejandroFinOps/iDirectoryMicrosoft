@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_bronze_ingest/notebooks
+role: bronze_ingestion
+purpose: Contenedor base para artefactos *.Notebook de ingesta mediante APIs REST, SFTP o conectores complejos.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.Notebook (notebook-content.py) de ingesta Bronze con metadatos de auditoria (_ingested_at, _batch_id).
+

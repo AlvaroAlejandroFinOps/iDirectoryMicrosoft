@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_bi_semantic/reports
+role: bi_semantic
+purpose: Contenedor base para archivos Power BI y reportes *.Report en formato PBIR / PBIP versionables en Git.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.Report (definition.pbir) vinculadas por ruta relativa (byPath) a semantic_models/. No versionar .pbix binarios.
+

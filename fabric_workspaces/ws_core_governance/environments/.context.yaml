@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_core_governance/environments
+role: core_governance
+purpose: Contenedor base para artefactos *.Environment de Microsoft Fabric (Spark pools, runtime y librerias).
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui los directorios *.Environment con su archivo .platform y configuracion Spark compute.json.
+

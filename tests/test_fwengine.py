@@ -1044,6 +1044,60 @@ class TestV5FederationAndEcosystem(unittest.TestCase):
         self.assertEqual(final_text.count("ICONTEXT-V5:THINKINGSEED:START"), 1)
 
 
+class TestUniversalFabricBaseSchema(unittest.TestCase):
+    """Verifies the Universal Base Directory Schema for Microsoft Fabric workspaces."""
+
+    def test_base_workspace_schema_completeness(self):
+        from src.fabric.medallion import validate_base_workspace_schema, scan_workspace_items
+        report = validate_base_workspace_schema(PROJECT_ROOT)
+        self.assertTrue(report["valid"], f"Faltan carpetas o beacons en el esquema base: {report}")
+        self.assertEqual(report["workspaces_count"], 5)
+        self.assertEqual(report["containers_count"], 17)
+        # Ensure the base schema is agnostic and clean (0 coupled client items)
+        items = scan_workspace_items(PROJECT_ROOT / "fabric_workspaces")
+        self.assertEqual(items, [], "El esquema de directorio base debe estar limpio de artefactos acoplados.")
+
+    def test_fabric_artifact_routing_to_base_containers(self):
+        from src.fabric.medallion import resolve_fabric_target_folder
+        self.assertEqual(
+            resolve_fabric_target_folder("env_spark_pool.Environment"),
+            "fabric_workspaces/ws_core_governance/environments",
+        )
+        self.assertEqual(
+            resolve_fabric_target_folder("lh_raw_erp.Lakehouse"),
+            "fabric_workspaces/ws_bronze_ingest/lakehouses",
+        )
+        self.assertEqual(
+            resolve_fabric_target_folder("pl_ingest_sap.DataPipeline"),
+            "fabric_workspaces/ws_bronze_ingest/pipelines",
+        )
+        self.assertEqual(
+            resolve_fabric_target_folder("nb_curate_sales.Notebook"),
+            "fabric_workspaces/ws_silver_transform/notebooks",
+        )
+        self.assertEqual(
+            resolve_fabric_target_folder("wh_enterprise.Warehouse"),
+            "fabric_workspaces/ws_gold_analytics/warehouses",
+        )
+        self.assertEqual(
+            resolve_fabric_target_folder("nb_dim_customer.Notebook"),
+            "fabric_workspaces/ws_gold_analytics/notebooks",
+        )
+        self.assertEqual(
+            resolve_fabric_target_folder("sm_executive.SemanticModel"),
+            "fabric_workspaces/ws_bi_semantic/semantic_models",
+        )
+        self.assertEqual(
+            resolve_fabric_target_folder("rpt_financials.Report"),
+            "fabric_workspaces/ws_bi_semantic/reports",
+        )
+
+    def test_fabric_audit_no_false_positives_on_root(self):
+        from src.fabric.rules import audit_fabric_path
+        violations = audit_fabric_path(PROJECT_ROOT)
+        self.assertEqual(violations, [], f"Falsos positivos detectados en la raíz: {violations}")
+
+
 if __name__ == "__main__":
     unittest.main()
 

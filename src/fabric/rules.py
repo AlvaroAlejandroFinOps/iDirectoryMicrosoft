@@ -4,7 +4,7 @@ Reglas de análisis estático para código PySpark, T-SQL, Pipelines y TMDL en M
 """
 
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Set
 import re
 import json
 
@@ -61,23 +61,36 @@ FABRIC_F8_RULES = {
     },
 }
 
+# Directorios internos del motor de gobernanza excluidos del escaneo de artefactos Fabric cuando se audita la raíz
+FRAMEWORK_INTERNAL_DIRS: Set[str] = {
+    "src/core",
+    "src/fabric",
+    "tools",
+    "tests",
+    "scripts",
+    "schemas",
+    "config",
+    "docs",
+    "01_seed",
+    "artifacts",
+    "skills",
+}
+
 
 def audit_pyspark_content(content: str, file_path: str) -> List[Dict[str, Any]]:
     """Analiza código PySpark en busca de violaciones a las reglas F8."""
     violations: List[Dict[str, Any]] = []
 
-    # Verificar si el archivo es realmente PySpark
-    is_pyspark = bool(
-        "pyspark" in content.lower()
-        or "spark." in content
-        or "sparksession" in content.lower()
-        or "notebook-content.py" in file_path
-    )
-    if not is_pyspark:
+    # Verificar si el archivo es realmente un notebook o job PySpark
+    has_spark_import = bool(re.search(r"^\s*(?:from|import)\s+pyspark\b", content, re.MULTILINE))
+    has_spark_api = bool(re.search(r"\bspark\.(?:read|sql|table|conf|createDataFrame)\b", content))
+    is_fabric_nb = "notebook-content.py" in file_path or "# Fabric notebook source" in content
+
+    if not (has_spark_import or has_spark_api or is_fabric_nb):
         return violations
 
-    # 1. Verificar V-Order
-    has_writes = bool(re.search(r"\.write\b|\.saveAsTable\b|\.toTable\b", content))
+    # 1. Verificar V-Order en escrituras de DataFrame Spark
+    has_writes = bool(re.search(r"\.write\b\s*\.(?:format|mode|option|save|parquet|delta)|\.(?:saveAsTable|toTable)\s*\(", content))
     has_vorder = "vorder.enabled" in content.lower()
     if has_writes and not has_vorder:
         violations.append({
@@ -159,7 +172,6 @@ def audit_pipeline_content(content: str, file_path: str) -> List[Dict[str, Any]]
 def audit_tmdl_content(content: str, file_path: str) -> List[Dict[str, Any]]:
     """Analiza archivos de modelo semántico TMDL buscando columnas calculadas en DAX."""
     violations: List[Dict[str, Any]] = []
-    # Buscar definición de columna calculada en TMDL: "column Nombre = ..."
     calc_col_matches = re.findall(r"column\s+[\w\s]+\s*=\s*(.+)", content)
     if calc_col_matches:
         violations.append({
@@ -172,6 +184,22 @@ def audit_tmdl_content(content: str, file_path: str) -> List[Dict[str, Any]]:
     return violations
 
 
+def _is_framework_internal_file(file_path: Path, scan_root: Path) -> bool:
+    """Verifica si un archivo pertenece al motor interno de iDirectory cuando se escanea desde la raíz."""
+    if not (scan_root / "FWengine.py").is_file():
+        return False
+    try:
+        rel = file_path.resolve().relative_to(scan_root.resolve()).as_posix().lower()
+    except ValueError:
+        return False
+    if rel == "fwengine.py":
+        return True
+    for internal_prefix in FRAMEWORK_INTERNAL_DIRS:
+        if rel == internal_prefix or rel.startswith(internal_prefix + "/"):
+            return True
+    return False
+
+
 def audit_fabric_path(target_path: Path) -> List[Dict[str, Any]]:
     """Audita un archivo o directorio completo de Fabric contra las reglas F8."""
     target = target_path.resolve()
@@ -182,8 +210,13 @@ def audit_fabric_path(target_path: Path) -> List[Dict[str, Any]]:
         files_to_check.append(target)
     elif target.is_dir():
         for p in target.rglob("*"):
-            if p.is_file() and not any(part.startswith(".") and part not in [".platform", ".Environment", ".Notebook"] for part in p.parts):
-                files_to_check.append(p)
+            if not p.is_file():
+                continue
+            if any(part.startswith(".") and part not in [".platform", ".Environment", ".Notebook"] for part in p.parts):
+                continue
+            if _is_framework_internal_file(p, target):
+                continue
+            files_to_check.append(p)
 
     for f in files_to_check:
         ext = f.suffix.lower()

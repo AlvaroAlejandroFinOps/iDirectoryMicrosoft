@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_bi_semantic/semantic_models
+role: bi_semantic
+purpose: Contenedor base para modelos semanticos *.SemanticModel en formato TMDL / PBISM conectados via Direct Lake.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.SemanticModel (definition.pbism y definition/*.tmdl). Prohibido usar columnas calculadas DAX (RULE-F8-06).
+

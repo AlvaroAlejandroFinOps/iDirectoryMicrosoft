@@ -22,6 +22,27 @@ def put(path, raw, check=False):
 
 
 def build(check=False):
+    if not (BASE / "iDirectory" / "skills/v6/idir/bundle.json").is_file():
+        target = ROOT / "tools/icontext_runtime"
+        writes = 0
+        manifest_path = target / "release_manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.is_file() else {"version": "6.0.0", "origin": "iDirectoryFabric/src/core", "files": {}}
+        files = dict(manifest.get("files", {}))
+        for rel_name in ("fwengine.py", "context_runtime.py"):
+            src_file = ROOT / "src/core" / rel_name
+            if src_file.is_file():
+                raw = src_file.read_bytes()
+                files[rel_name] = hashlib.sha256(raw).hexdigest()
+                writes += put(target / rel_name, raw, check)
+        for schema in (ROOT / "schemas").glob("*.schema.json"):
+            raw = schema.read_bytes()
+            rel_s = "schemas/" + schema.name
+            files[rel_s] = hashlib.sha256(raw).hexdigest()
+            writes += put(target / rel_s, raw, check)
+        manifest["files"] = files
+        writes += put(manifest_path, (json.dumps(manifest, sort_keys=True, indent=2) + "\n").encode("utf-8"), check)
+        print(json.dumps({"version": "6.0.0", "generated_writes": writes, "check": check, "mode": "standalone"}))
+        return
     runtime = (ROOT / "src/core/context_runtime.py").read_bytes()
     for path in (BASE / "MetricsThinking/src/metricsthinking/runtime.py", BASE / "iReadme/src/ireadme/runtime.py",
                  BASE / "ThinkingSeed/scripts/context_runtime.py"):

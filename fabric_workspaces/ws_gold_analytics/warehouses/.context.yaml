@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_gold_analytics/warehouses
+role: gold_dimensional
+purpose: Contenedor base para artefactos *.Warehouse y *.SQLDatabase (tablas DDL T-SQL, vistas y procedimientos almacenados).
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.Warehouse con su .platform, .sqlproj y esquemas dbo/Tables, dbo/Views y dbo/StoredProcedures.
+

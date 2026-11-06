@@ -1,7 +1,7 @@
 version: 1.0
 directory: fabric_workspaces/ws_core_governance/libraries
 role: core_governance
-purpose: Subdominio libraries bajo fabric_workspaces/ws_core_governance/.
+purpose: Contenedor base para librerias compartidas Python (.py, .whl) y utilitarios transversales para Spark.
 relevance: high
 crawl: true
 read_priority: p1
@@ -9,4 +9,4 @@ seed_reference: optional
 tier1_preload: false
 inherited: true
 token_density: sparse
-instructions: Hereda directivas de fabric_workspaces/ws_core_governance/.
+instructions: Alojar aqui paquetes reutilizables de validacion, calidad de datos y helpers de PySpark para todos los workspaces.

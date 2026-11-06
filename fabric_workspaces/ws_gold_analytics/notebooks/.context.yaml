@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_gold_analytics/notebooks
+role: gold_dimensional
+purpose: Contenedor base para artefactos *.Notebook de modelado dimensional Kimball (Star Schema: Facts, Dimensions, KPIs).
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.Notebook que construyen dim_* y fact_* con V-Order habilitado para lectura sub-segundo en Direct Lake.
+

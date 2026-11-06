@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_core_governance/notebooks
+role: core_governance
+purpose: Contenedor base para Notebooks transversales de administracion, mantenimiento Delta (OPTIMIZE/VACUUM) y auditoria.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui artefactos *.Notebook de mantenimiento semanal Delta Lake (RULE-F8-05) y monitoreo de capacidad.
+

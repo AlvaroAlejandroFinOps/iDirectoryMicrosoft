@@ -11,6 +11,10 @@ htmlcov/
 .context/.*.lock
 *.lock
 
-# Ignorar archivos de datos
+# Ignorar archivos de datos y cachés locales de Power BI / Microsoft Fabric
 *.csv
 *.parquet
+*.abf
+**/localSettings.json
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

@@ -1,7 +1,7 @@
 version: 1.0
 directory: fabric_workspaces/ws_silver_transform
 role: silver_curation
-purpose: Subdominio ws_silver_transform bajo fabric_workspaces/.
+purpose: Workspace base de capa Silver para limpieza, deduplicacion, calidad de datos y conformacion Delta.
 relevance: high
 crawl: true
 read_priority: p1
@@ -9,4 +9,4 @@ seed_reference: optional
 tier1_preload: false
 inherited: true
 token_density: sparse
-instructions: Hereda directivas de fabric_workspaces/.
+instructions: Ubicar referencias Lakehouse Silver en lakehouses/, Notebooks PySpark/SQL en notebooks/ y Pipelines en pipelines/.

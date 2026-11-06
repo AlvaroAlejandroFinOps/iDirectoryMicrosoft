@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_bronze_ingest/eventstreams
+role: bronze_ingestion
+purpose: Contenedor base para artefactos *.Eventstream, *.MirroredDatabase y *.KQLDatabase de ingesta CDC y tiempo real.
+relevance: medium
+crawl: true
+read_priority: p2
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui artefactos de streaming y Database Mirroring hacia OneLake Bronze.
+

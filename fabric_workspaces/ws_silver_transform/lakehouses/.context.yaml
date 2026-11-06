@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_silver_transform/lakehouses
+role: silver_curation
+purpose: Contenedor base para referencias *.Lakehouse de capa Silver (tablas Delta curadas y conformadas).
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui artefactos *.Lakehouse Silver con .platform y shortcuts.metadata.json hacia tablas Bronze.
+

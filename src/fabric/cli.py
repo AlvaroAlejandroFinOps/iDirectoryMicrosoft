@@ -1,13 +1,16 @@
 """
 iDirectoryFabric - Fabric CLI Subcommand Controller
-Integra las capacidades de auditoría, remediación y clasificación Medallón en el CLI.
+Integra la validación del Esquema de Directorio Base Universal, clasificación Medallón,
+auditoría de Capacidad F8 y remediación automática en el CLI.
 """
 
 from pathlib import Path
-from typing import List, Optional
-import sys
-
-from .medallion import scan_workspace_items, classify_fabric_item
+from typing import List
+from .medallion import (
+    scan_workspace_items,
+    classify_fabric_item,
+    validate_base_workspace_schema,
+)
 from .rules import audit_fabric_path
 from .remediator import remediate_file
 
@@ -15,10 +18,10 @@ from .remediator import remediate_file
 def run_fabric_cli(argv: List[str], repo_root: Path) -> int:
     """Ejecuta los subcomandos de Fabric."""
     if not argv or "--help" in argv or "-h" in argv:
-        print("[iDirectoryFabric - Motor de Gobernanza y Remediación para Microsoft Fabric F8]")
+        print("[iDirectoryFabric - Motor de Gobernanza y Esquema Base para Microsoft Fabric]")
         print("Uso: python FWengine.py fabric [opciones]")
-        print("  --audit [ruta]       Audita código PySpark/Pipelines/TMDL contra reglas F8.")
-        print("  --classify [ruta]    Clasifica artefactos Fabric en capas Medallón.")
+        print("  --classify [ruta]    Valida el esquema de directorio base y clasifica artefactos Fabric en capas Medallón.")
+        print("  --audit [ruta]       Audita código PySpark/Pipelines/TMDL contra reglas de Capacidad F8.")
         print("  --remediate [ruta]   Aplica parches automáticos de optimización F8 a notebooks.")
         return 0
 
@@ -51,19 +54,34 @@ def run_fabric_cli(argv: List[str], repo_root: Path) -> int:
         target = (repo_root / target_path).resolve()
 
     if mode == "classify":
-        print(f"[*] Clasificando artefactos de Microsoft Fabric en: {target}")
+        print(f"[*] Analizando Esquema de Directorio Base y Artefactos Fabric en: {target}")
+        if (target / "fabric_workspaces").is_dir() or target.name.lower() == "fabric_workspaces":
+            schema_report = validate_base_workspace_schema(target)
+            status_str = "VALIDADO (100%)" if schema_report["valid"] else "INCOMPLETO"
+            print(
+                f"[+] Esquema Base Universal: {status_str} — "
+                f"{schema_report['workspaces_count']} Workspaces Medallón | "
+                f"{schema_report['containers_count']} Carpetas Contenedoras Gobernadas:"
+            )
+            for c in schema_report["containers"]:
+                tier_badge = f"[{c['tier'].upper():<15}]"
+                types_str = ", ".join(c["accepted_types"])
+                state_icon = "OK" if (c["exists"] and c["has_beacon"]) else "MISSING"
+                print(f"  {tier_badge} {c['path']:<52} ({state_icon}) <- [{types_str}]")
+
         items = scan_workspace_items(target)
         if not items:
-            print("  [i] No se detectaron artefactos Fabric estructurados (.Lakehouse, .Notebook, etc.).")
-            # Probar clasificar el directorio directo
-            direct = classify_fabric_item(target)
-            print(f"  -> Directorio raíz: {direct['tier'].upper()} ({direct['item_type']}) - {direct['rationale']}")
+            if not ((target / "fabric_workspaces").is_dir() or target.name.lower() == "fabric_workspaces"):
+                direct = classify_fabric_item(target)
+                print(f"  -> Clasificación de ruta: {direct['tier'].upper()} ({direct['item_type']}) -> Destino base: {direct['target_folder']}")
+            else:
+                print("[i] Directorio base limpio (0 artefactos acoplados). Listo para recibir artefactos de cualquier Workspace.")
             return 0
 
-        print(f"[+] Se detectaron {len(items)} artefactos Fabric:")
+        print(f"\n[+] Se detectaron {len(items)} artefactos Fabric depositados:")
         for it in items:
-            tier_badge = f"[{it['tier'].upper():<14}]"
-            print(f"  {tier_badge} {it['item_name']:<35} ({it['item_type']:<13}) -> {it['rationale']}")
+            tier_badge = f"[{it['tier'].upper():<15}]"
+            print(f"  {tier_badge} {it['item_name']:<35} ({it['item_type']:<13}) -> Destino base: {it['target_folder']}")
         return 0
 
     elif mode == "audit":
@@ -104,4 +122,3 @@ def run_fabric_cli(argv: List[str], repo_root: Path) -> int:
         return 0
 
     return 0
-

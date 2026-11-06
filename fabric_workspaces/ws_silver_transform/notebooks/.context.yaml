@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_silver_transform/notebooks
+role: silver_curation
+purpose: Contenedor base para artefactos *.Notebook PySpark y Spark SQL de limpieza, deduplicacion y SCD Tipo 2 en Silver.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.Notebook (notebook-content.py) con V-Order, Liquid Clustering y shuffle.partitions=8 (RULE-F8-01 a 04).
+

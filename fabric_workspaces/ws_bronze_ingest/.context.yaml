@@ -1,7 +1,7 @@
 version: 1.0
 directory: fabric_workspaces/ws_bronze_ingest
 role: bronze_ingestion
-purpose: Subdominio ws_bronze_ingest bajo fabric_workspaces/.
+purpose: Workspace base de capa Bronze para ingesta cruda inmutable, OneLake Shortcuts, Pipelines y Real-Time.
 relevance: high
 crawl: true
 read_priority: p1
@@ -9,4 +9,4 @@ seed_reference: optional
 tier1_preload: false
 inherited: true
 token_density: sparse
-instructions: Hereda directivas de fabric_workspaces/.
+instructions: Ubicar Lakehouses en lakehouses/, DataPipelines en pipelines/, Dataflows en dataflows/, Eventstreams en eventstreams/ y Notebooks en notebooks/.

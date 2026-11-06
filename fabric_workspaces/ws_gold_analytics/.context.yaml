@@ -1,7 +1,7 @@
 version: 1.0
 directory: fabric_workspaces/ws_gold_analytics
 role: gold_dimensional
-purpose: Subdominio ws_gold_analytics bajo fabric_workspaces/.
+purpose: Workspace base de capa Gold para modelos dimensionales Kimball Star Schema en Lakehouse y Warehouse.
 relevance: high
 crawl: true
 read_priority: p1
@@ -9,4 +9,4 @@ seed_reference: optional
 tier1_preload: false
 inherited: true
 token_density: sparse
-instructions: Hereda directivas de fabric_workspaces/.
+instructions: Ubicar Lakehouses Gold en lakehouses/, Warehouses T-SQL en warehouses/, Notebooks dimensionales en notebooks/ y Pipelines en pipelines/.

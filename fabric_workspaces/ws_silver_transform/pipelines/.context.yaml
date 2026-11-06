@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_silver_transform/pipelines
+role: silver_curation
+purpose: Contenedor base para artefactos *.DataPipeline de orquestacion y secuenciacion de transformaciones Silver.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.DataPipeline que orquestan notebooks Silver sin exceder 2 ejecuciones pesadas en paralelo.
+

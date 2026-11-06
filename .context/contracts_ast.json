@@ -45,8 +45,8 @@
     "--tier",
     "--toc"
   ],
-  "contracts_ast_hash": "561ea4f996456618dbdee0e7436fa6a4db49c1798c1ef58d29688d5f59361a74",
-  "inputs_hash": "04c7d01f4202e5d132a61420374409d9efe63dd86e60070c916c70b50b8896f9",
+  "contracts_ast_hash": "f03e1e545516ca9a5aa574207237755f105f904fde3cda11951e5d09d28e0899",
+  "inputs_hash": "89c9b98d4357684e53012a758aaf3bfc9f7f5efc8d2b338aaf285a3b60d69819",
   "modules": {
     "FWengine.py": {
       "cli_flags": [
@@ -59,38 +59,6 @@
         "icontext_cli",
         "pathlib",
         "sys"
-      ],
-      "signatures": [],
-      "symbols": []
-    },
-    "fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py": {
-      "cli_flags": [],
-      "imports": [
-        "re",
-        "typing"
-      ],
-      "signatures": [
-        "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::validate_chilean_rut(rut_str: str) -> bool",
-        "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::format_chilean_rut(rut_str: str) -> Optional[str]"
-      ],
-      "symbols": [
-        "validate_chilean_rut",
-        "format_chilean_rut"
-      ]
-    },
-    "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook/notebook-content.py": {
-      "cli_flags": [],
-      "imports": [
-        "pyspark.sql"
-      ],
-      "signatures": [],
-      "symbols": []
-    },
-    "fabric_workspaces/ws_silver_transform/nb_curate_costos_obra.notebook/notebook-content.py": {
-      "cli_flags": [],
-      "imports": [
-        "pyspark.sql",
-        "pyspark.sql.types"
       ],
       "signatures": [],
       "symbols": []
@@ -240,6 +208,7 @@
         "random",
         "re",
         "src.fabric.cli",
+        "src.fabric.medallion",
         "stat",
         "sys",
         "threading",
@@ -361,7 +330,6 @@
         "pathlib",
         "remediator",
         "rules",
-        "sys",
         "typing"
       ],
       "signatures": [
@@ -381,6 +349,8 @@
       ],
       "signatures": [
         "./src/fabric/medallion.py::MedallionTier(class)",
+        "./src/fabric/medallion.py::resolve_fabric_target_folder(item_name: str, item_type: Optional[str]=None, tier_hint: Optional[str]=None) -> str",
+        "./src/fabric/medallion.py::validate_base_workspace_schema(root_dir: Path) -> Dict[str, Any]",
         "./src/fabric/medallion.py::read_fabric_platform_metadata(item_dir: Path) -> Dict[str, Any]",
         "./src/fabric/medallion.py::detect_item_type(path: Path) -> Optional[str]",
         "./src/fabric/medallion.py::classify_fabric_item(item_path: Path) -> Dict[str, Any]",
@@ -388,6 +358,8 @@
       ],
       "symbols": [
         "MedallionTier",
+        "resolve_fabric_target_folder",
+        "validate_base_workspace_schema",
         "read_fabric_platform_metadata",
         "detect_item_type",
         "classify_fabric_item",
@@ -439,6 +411,8 @@
         "os",
         "pathlib",
         "shutil",
+        "src.fabric.medallion",
+        "src.fabric.rules",
         "sys",
         "tempfile",
         "time",
@@ -459,7 +433,8 @@
         "./tests/test_fwengine.py::TestTreeSlicing(class)",
         "./tests/test_fwengine.py::TestV4AdversarialAndContinuity(class)",
         "./tests/test_fwengine.py::TestV41EnterpriseAndIncremental(class)",
-        "./tests/test_fwengine.py::TestV5FederationAndEcosystem(class)"
+        "./tests/test_fwengine.py::TestV5FederationAndEcosystem(class)",
+        "./tests/test_fwengine.py::TestUniversalFabricBaseSchema(class)"
       ],
       "symbols": [
         "TestMiniYAML",
@@ -476,7 +451,8 @@
         "TestTreeSlicing",
         "TestV4AdversarialAndContinuity",
         "TestV41EnterpriseAndIncremental",
-        "TestV5FederationAndEcosystem"
+        "TestV5FederationAndEcosystem",
+        "TestUniversalFabricBaseSchema"
       ]
     },
     "tests/test_token_budget.py": {
@@ -543,6 +519,7 @@
     "TestTopologicalManifest",
     "TestTopologicalScalingStress",
     "TestTreeSlicing",
+    "TestUniversalFabricBaseSchema",
     "TestV41EnterpriseAndIncremental",
     "TestV4AdversarialAndContinuity",
     "TestV5FederationAndEcosystem",
@@ -574,7 +551,6 @@
     "estimated_tokens",
     "extract_preserved_comments",
     "extract_seed_section",
-    "format_chilean_rut",
     "format_compact_tree_json",
     "format_sliced_tree",
     "generate_beacon_content",
@@ -607,6 +583,7 @@
     "remediate_pyspark_code",
     "repository_lock",
     "resolve_beacon",
+    "resolve_fabric_target_folder",
     "resolve_seed_key_files",
     "route_file",
     "run_fabric_cli",
@@ -620,8 +597,8 @@
     "upsert_segmented_block",
     "validate_backlog_data",
     "validate_backlog_queue",
+    "validate_base_workspace_schema",
     "validate_beacon_data",
-    "validate_chilean_rut",
     "validate_dependency_dag",
     "validate_readmes",
     "validate_seed",
@@ -629,8 +606,6 @@
     "write_json"
   ],
   "signatures_1line": [
-    "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::validate_chilean_rut(rut_str: str) -> bool",
-    "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::format_chilean_rut(rut_str: str) -> Optional[str]",
     "./skills/v6/idir/scripts/run.py::matches_version(path) -> Any",
     "./src/core/context_runtime.py::read_json(path, default=None) -> Any",
     "./src/core/context_runtime.py::digest(value) -> Any",
@@ -699,6 +674,8 @@
     "./src/core/fwengine.py::main() -> Any",
     "./src/fabric/cli.py::run_fabric_cli(argv: List[str], repo_root: Path) -> int",
     "./src/fabric/medallion.py::MedallionTier(class)",
+    "./src/fabric/medallion.py::resolve_fabric_target_folder(item_name: str, item_type: Optional[str]=None, tier_hint: Optional[str]=None) -> str",
+    "./src/fabric/medallion.py::validate_base_workspace_schema(root_dir: Path) -> Dict[str, Any]",
     "./src/fabric/medallion.py::read_fabric_platform_metadata(item_dir: Path) -> Dict[str, Any]",
     "./src/fabric/medallion.py::detect_item_type(path: Path) -> Optional[str]",
     "./src/fabric/medallion.py::classify_fabric_item(item_path: Path) -> Dict[str, Any]",
@@ -724,6 +701,7 @@
     "./tests/test_fwengine.py::TestV4AdversarialAndContinuity(class)",
     "./tests/test_fwengine.py::TestV41EnterpriseAndIncremental(class)",
     "./tests/test_fwengine.py::TestV5FederationAndEcosystem(class)",
+    "./tests/test_fwengine.py::TestUniversalFabricBaseSchema(class)",
     "./tests/test_token_budget.py::estimate_tokens(text: str) -> int",
     "./tests/test_token_budget.py::TestTokenBudgetBenchmark(class)",
     "./tests/test_token_budget.py::TestTopologicalScalingStress(class)",

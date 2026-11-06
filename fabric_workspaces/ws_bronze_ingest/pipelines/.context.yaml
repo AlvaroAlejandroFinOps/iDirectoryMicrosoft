@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_bronze_ingest/pipelines
+role: bronze_ingestion
+purpose: Contenedor base para artefactos *.DataPipeline y *.CopyJob de ingesta desde sistemas origen hacia Bronze.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui carpetas *.DataPipeline con pipeline-content.json. Respetar limite de concurrencia F8 (RULE-F8-07).
+

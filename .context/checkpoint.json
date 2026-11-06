@@ -1,17 +1,14 @@
 {
-  "version": "5.0",
+  "active_invariants": [
+    "INV-02",
+    "INV-03"
+  ],
+  "completed_steps": [],
+  "current_phase": "P0",
+  "next_action": "Audit and plan verification",
   "plan_id": "baseline",
   "status": "draft",
-  "current_phase": "P0",
-  "completed_steps": [],
-  "next_action": "Audit and plan verification",
+  "updated_at": "2026-11-06T14:07:09.825783+00:00",
   "verified_evidence": [],
-  "active_invariants": [
-    "INV-01",
-    "INV-02",
-    "INV-03",
-    "INV-06",
-    "INV-08"
-  ],
-  "updated_at": "2026-10-29T17:44:42.122006+00:00"
+  "version": "6.0"
 }

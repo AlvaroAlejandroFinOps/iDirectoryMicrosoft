@@ -1,15 +1,15 @@
 ![Arquitectura iDirectoryFabric](iDirectory.png)
 
-**iDirectoryFabric v6.0.0.** Framework de Gobernanza, Ingeniería de Contexto y Remediación Automatizada para Microsoft Fabric (Capacidad F8) — Santolaya (Chile).
+**iDirectoryFabric v6.0.0.** Esquema de Directorio Base Universal, Gobernanza Corporativa, Ingeniería de Contexto y Remediación Automatizada para Microsoft Fabric (Capacidad F8+).
 <!-- ICONTEXT-V6:RELEASE -->
 
-# iDirectoryFabric: Estándar de Ingeniería de Contexto y Gobernanza para Microsoft Fabric por Gravity HyperScale Thinking
+# iDirectoryFabric: El Esquema de Directorio Base Universal y Estándar de Gobernanza para Microsoft Fabric por Gravity HyperScale Thinking
 
 **Idioma:** [English](README.md) | [Español](README_ES.md)
 
 [![Estándar](https://img.shields.io/badge/Est%C3%A1ndar-Enterprise%20Paper--Grade%20v6.0-2b2b2b?style=flat-square)](#)
-[![Capacidad Fabric](https://img.shields.io/badge/Capacidad%20Fabric-F8%20%288%20CUs%20%7C%2016%20vCores%29-0078d4?style=flat-square)](#3-gobernanza-de-capacidad-f8-y-economía-de-cus)
-[![Cliente](https://img.shields.io/badge/Empresa-Santolaya%20%28Chile%29-107c41?style=flat-square)](#1-resumen-ejecutivo)
+[![Blueprint](https://img.shields.io/badge/Blueprint-Esquema%20Base%20Universal%20Fabric-107c41?style=flat-square)](#2-arquitectura-del-sistema-y-linaje-medallón)
+[![Capacidad Fabric](https://img.shields.io/badge/Capacidad%20Fabric-F8%2B%20%288%20CUs%20%7C%2016%20vCores%29-0078d4?style=flat-square)](#3-gobernanza-de-capacidad-f8-y-economía-de-cus)
 [![Arquitectura](https://img.shields.io/badge/Arquitectura-OneLake%20Medallion-008272?style=flat-square)](#2-arquitectura-del-sistema-y-linaje-medallón)
 [![Direct Lake](https://img.shields.io/badge/Power%20BI-Direct%20Lake%20Guardrails-f2c811?style=flat-square)](#4-motor-de-optimización-y-remediación-f8)
 [![Motor](https://img.shields.io/badge/Motor-FWengine.py-1a1a1a?style=flat-square)](#5-interfaz-cli-y-comandos-operacionales)
@@ -19,61 +19,51 @@
 
 ## 1. Resumen Ejecutivo
 
-**iDirectoryFabric**, concebido y desarrollado por **Gravity HyperScale Thinking** y calibrado específicamente para **Santolaya** (Constructora e Inmobiliaria Santolaya, Santiago de Chile), establece un plano de control determinista y una arquitectura de ingeniería de contexto para gobernar cargas de trabajo corporativas sobre **Microsoft Fabric**.
+**iDirectoryFabric**, concebido y desarrollado por **Gravity HyperScale Thinking**, establece el **Esquema de Directorio Base Universal (Blueprint/Template Agnóstico)** y el plano de control determinista de ingeniería de contexto para estructurar, gobernar y escalar cualquier repositorio corporativo conectado a **Microsoft Fabric Git Integration** en GitHub.
 
-En empresas de edificación e inmobiliarias de alta envergadura, los flujos de datos integran sistemas transaccionales locales, ERPs en la nube, portales de abastecimiento y subcontratación (Iconstruye), contabilidad financiera (SAP / Softland), CRM comercial y promesas (PlanOK / Salesforce) y seguimiento de avance físico en obra. Al desplegar estas cargas sobre una capacidad elástica pero acotada como **Microsoft Fabric F8** (que provee 8 Capacity Units, equivalentes a un pool de ráfaga de ~16 vCores Spark), surgen riesgos operacionales críticos:
-1. **Interactive Delay y Rejection:** Modelos semánticos o medidas DAX descuidadas que exceden los límites de memoria de F8 (~8–10 GB) conmutan forzosamente de Direct Lake a DirectQuery, traduciendo cada interacción visual en decenas de consultas T-SQL contra el SQL Analytics Endpoint y saturando de inmediato los 8 CUs.
-2. **Throttling en Segundo Plano (Background Throttling):** La ejecución simultánea de notebooks de PySpark sin escalonar o actividades de copia desmedidas activa el mecanismo de suavizado de 24 horas de Fabric. Cuando el consumo excede el 100% de la capacidad en la ventana de suavizado, Fabric aplica *Background Rejection*, cancelando de forma forzosa los pipelines productivos.
-3. **Tormenta de Archivos Pequeños en OneLake:** El particionamiento tradicional tipo Hive (`partitionBy`) sobre columnas de alta cardinalidad genera millones de archivos Parquet de pocos kilobytes, colapsando la memoria de metadatos del driver Spark y provocando fallos por Out-of-Memory (OOM).
+Los equipos de alta ingeniería de datos que operan múltiples Workspaces en Microsoft Fabric enfrentan dos desafíos críticos al llevar sus proyectos a GitHub:
+1. **Desorden Topológico de Artefactos:** Sin un esquema de carpetas base estandarizado, los Notebooks (`.Notebook`), referencias de Lakehouse (`.Lakehouse`), Warehouses (`.Warehouse`), Pipelines (`.DataPipeline`), Modelos Semánticos (`.SemanticModel` en TMDL) y Reportes Power BI (`.Report` en PBIR) caen mezclados en la raíz del workspace, degradando la trazabilidad y el mantenimiento.
+2. **Throttling de Capacidad y Caída a DirectQuery (Base F8+):** Operar cargas analíticas sobre capacidades como **Microsoft Fabric F8** (8 Capacity Units $\approx$ pool de ráfaga de 16 vCores Spark) exige barreras estrictas contra *Interactive Rejection*, *Background Rejection* (ventana de suavizado de 24 horas) y tormentas de archivos pequeños en OneLake.
 
-Para erradicar estas fallas, **iDirectoryFabric v6.0** introduce un núcleo de gobernanza sin dependencias externas (`FWengine.py`), un **Clasificador Medallón Inteligente**, un **Motor de Optimización y Remediación Estática/Dinámica F8**, y un **Plano de Ingeniería de Contexto Adaptativo** que permite a los agentes autónomos de IA (Google Gemini/Antigravity, Anthropic Claude Code, OpenAI/Codex) auditar, reparar y estructurar artefactos de Fabric con un consumo acotado de tokens ($< 220\text{ tokens}$ en Tier 1A).
+Para resolver ambos retos de raíz, **iDirectoryFabric v6.0** entrega un **Esquema de Directorio Base limpio y agnóstico de 5 Workspaces Medallón y 17 Carpetas Contenedoras** gobernadas por balizas `.context.yaml`, acompañado de un kernel sin dependencias externas (`FWengine.py`), un **Ruteador y Clasificador Medallón Automático**, y un **Motor de Remediación F8** con consumo acotado de tokens ($< 220\text{ tokens}$ en Tier 1A).
 
 ---
 
 ## 2. Arquitectura del Sistema y Linaje Medallón
 
-iDirectoryFabric organiza los repositorios vinculados mediante **Microsoft Fabric Git Integration** en una estructura multi-workspace que respeta el aislamiento estricto de capas Medallón:
+iDirectoryFabric provee una estructura base limpia, lista para clonar y adaptar a cualquier proyecto, 100% compatible con **Microsoft Fabric Git Integration** (*Subfolder-per-Workspace* y *Workspace Folders* nativos):
 
 ```text
-+----------------------------------------------------------------------------------------------------+
-|                                    SISTEMAS ORIGEN SANTOLAYA                                       |
-|             (Compras / Subcontratos / ERP Contable / Ventas Inmobiliarias / Avance Obra)           |
-+----------------------------------------------------------------------------------------------------+
-                                                  │
-                                                  ▼
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
-| CAPA BRONZE: ws_bronze_ingest (Lakehouse Bronze / Data Pipelines / Shortcuts)                      |
-| - Ingesta raw inmutable, append-only, schema-on-read en OneLake.                                   |
-| - Metadatos de auditoría obligatorios: _ingested_at, _source_system, _batch_id.                    |
-| - Cómputo: Copy Activities ligeras sin inicialización innecesaria de clusters Spark.               |
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
-                                                  │
-                                                  ▼
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
-| CAPA SILVER: ws_silver_transform (Lakehouse Silver / Curated PySpark Notebooks)                    |
-| - Limpieza, deduplicación, validación de RUT chileno con algoritmo Módulo 11.                     |
-| - Normalización monetaria (conversión diaria de UF - Unidad de Fomento y CLP).                     |
-| - Almacenamiento Delta Lake optimizado con V-Order = True y Liquid Clustering (CLUSTER BY id_obra).|
-| - Particiones de shuffle acotadas a 8 para eliminar sobrecarga en los 16 vCores.                  |
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
-                                                  │
-                                                  ▼
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
-| CAPA GOLD: ws_gold_analytics (Fabric Warehouse / Lakehouse Gold / Kimball Star Schema)             |
-| - Modelo dimensional analítico en estrella: fact_costos_obra, fact_avance_fisico,                   |
-|   fact_ventas_inmobiliarias, dim_proyecto, dim_obra, dim_contratista, dim_tiempo.                 |
-| - Tablas Delta pre-agregadas que aseguran respuestas analíticas en sub-segundos.                   |
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
-                                                  │
-                                                  ▼
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
-| CAPA BI SEMANTIC: ws_bi_semantic (Modelos Semánticos Direct Lake TMDL / Power BI PBIR)             |
-| - Modelos semánticos en modo DIRECT LAKE puro conectados directamente a Delta OneLake.             |
-| - Límite estricto de memoria: Modelo semántico < 8 GB (salvaguarda física F8).                     |
-| - Cero columnas calculadas DAX: Toda métrica derivada se pre-calcula aguas arriba en Silver/Gold.  |
-| - Reportes ejecutivos de obras e inmobiliaria en formato PBIR con trazabilidad Git.               |
-+────────────────────────────────────────────────────────────────────────────────────────────────────+
+fabric_workspaces/
+├── ws_core_governance/                # Gobernanza Central, Cómputo Spark y Librerías Comunes
+│   ├── environments/                  # Carpeta donde caen *.Environment (Spark pools, runtime)
+│   ├── libraries/                     # Carpeta donde caen paquetes Python (.whl) y utilitarios (.py)
+│   └── notebooks/                     # Carpeta donde caen *.Notebook de mantenimiento (OPTIMIZE/VACUUM)
+│
+├── ws_bronze_ingest/                  # Workspace Capa Bronze (Ingesta Cruda Inmutable)
+│   ├── lakehouses/                    # Carpeta donde caen referencias *.Lakehouse Bronze y Shortcuts
+│   ├── pipelines/                     # Carpeta donde caen *.DataPipeline y *.CopyJob de ingesta
+│   ├── dataflows/                     # Carpeta donde caen *.Dataflow Gen2
+│   ├── eventstreams/                  # Carpeta donde caen *.Eventstream, *.MirroredDatabase, *.KQLDatabase
+│   └── notebooks/                     # Carpeta donde caen *.Notebook de ingesta vía APIs o fuentes complejas
+│
+├── ws_silver_transform/               # Workspace Capa Silver (Curación, Calidad y Conformación Delta)
+│   ├── lakehouses/                    # Carpeta donde caen referencias *.Lakehouse Silver
+│   ├── notebooks/                     # Carpeta donde caen *.Notebook PySpark/SQL de limpieza y SCD2
+│   └── pipelines/                     # Carpeta donde caen *.DataPipeline de orquestación Silver
+│
+├── ws_gold_analytics/                 # Workspace Capa Gold (Modelo Dimensional Kimball Star Schema)
+│   ├── lakehouses/                    # Carpeta donde caen referencias *.Lakehouse Gold con V-Order
+│   ├── warehouses/                    # Carpeta donde caen *.Warehouse y *.SQLDatabase (T-SQL DDL/Vistas)
+│   ├── notebooks/                     # Carpeta donde caen *.Notebook de tablas de Hechos y Dimensiones
+│   └── pipelines/                     # Carpeta donde caen *.DataPipeline de refresco analítico Gold
+│
+└── ws_bi_semantic/                    # Workspace Capa Semántica y Consumo BI (Direct Lake)
+    ├── semantic_models/               # Carpeta donde caen *.SemanticModel (definiciones TMDL y .pbism)
+    └── reports/                       # Carpeta donde caen archivos Power BI *.Report (formato PBIR / PBIP)
 ```
+
+Cada una de las 17 carpetas contenedoras está anclada en Git mediante su propio archivo `.context.yaml`, lo que permite que GitHub versione la estructura de directorios base limpia sin archivos `.gitkeep` (que Fabric Git Integration rechaza) e inyecte directivas específicas de ingeniería de datos en los agentes de IA.
 
 ---
 
@@ -90,7 +80,7 @@ $$\text{Pool de Cómputo Disponible} = 8\text{ CUs} \approx 16\text{ vCores Spar
 | **Segundo Plano (PySpark / Pipelines)** | 24 Horas | Encolado $\to$ Background Rejection (Cancelación forzosa de pipeline) |
 | **Memoria de Modelo Direct Lake** | Límite Físico | Degradación a DirectQuery $\implies$ Saturación inmediata de 8 CUs |
 
-iDirectoryFabric inyecta configuraciones deterministas en `.Environment/Setting/Spark/compute.json`:
+iDirectoryFabric gobierna las configuraciones de pools Spark dentro de `ws_core_governance/environments/*.Environment/Setting/Spark/compute.json`:
 - **Asignación de Nodos:** Mínimo 1 nodo, Máximo 2 nodos (previene sobrecostes de autoescala).
 - **Auto-pause Delay:** 2 minutos (elimina cobro por clusters ociosos).
 - **Optimización Dinámica:** Auto-tune y `optimizeWrite` activos por defecto.
@@ -99,7 +89,7 @@ iDirectoryFabric inyecta configuraciones deterministas en `.Environment/Setting/
 
 ## 4. Motor de Optimización y Remediación F8
 
-El motor de remediación analiza y soluciona 7 antipatrones de rendimiento:
+El motor de remediación analiza y soluciona 7 antipatrones de rendimiento sobre cualquier artefacto que se deposite en el esquema base:
 
 ```text
 +─────────────+──────────────────────────────────────+──────────+─────────────────────────────────────────+
@@ -122,19 +112,22 @@ El motor de remediación analiza y soluciona 7 antipatrones de rendimiento:
 El plano de control se invoca a través de `FWengine.py`:
 
 ```powershell
-# 1. Auditar repositorio o workspace contra las reglas de capacidad F8
-python FWengine.py fabric --audit fabric_workspaces/
-
-# 2. Clasificar artefactos de Fabric Git en capas Medallón
+# 1. Validar el esquema base de 5 Workspaces / 17 Contenedores y clasificar artefactos depositados
 python FWengine.py fabric --classify fabric_workspaces/
+
+# 2. Auditar repositorio o workspace contra las reglas de capacidad F8
+python FWengine.py fabric --audit fabric_workspaces/
 
 # 3. Aplicar remediación automática F8 a notebooks de PySpark
 python FWengine.py fabric --remediate fabric_workspaces/
 
-# 4. Compilar paquete de contexto atómico (<220 tokens) para agentes de IA
-python FWengine.py context --pack fabric_workspaces/ws_silver_transform --tier 1a
+# 4. Enrutar automáticamente cualquier artefacto o archivo de Fabric a su carpeta contenedora base
+python FWengine.py route <ruta_artefacto> --move
 
-# 5. Reconciliación completa e idempotente del repositorio (topología, balizas, satélite)
+# 5. Compilar paquete de contexto atómico (<220 tokens) para agentes de IA
+python FWengine.py context --pack fabric_workspaces/ws_silver_transform/notebooks --tier 1a
+
+# 6. Reconciliación completa e idempotente del repositorio (topología, balizas, satélite)
 python FWengine.py reconcile
 python FWengine.py reconcile --check
 ```
@@ -145,9 +138,9 @@ python FWengine.py reconcile --check
 
 iDirectoryFabric se acopla con **Antigravity** mediante skills especializadas y perfiles de contexto adaptativo:
 
-- **Activación de Skill:** Invoca `/fabric` en el chat de Antigravity para iniciar auditorías de CUs, remediación y clasificación Medallón.
+- **Activación de Skill:** Invoca `/fabric` en el chat de Antigravity para validar el esquema base, auditar CUs y clasificar artefactos Medallón.
 - **Preservación de Ventana de Contexto:** Los paquetes atómicos (`Tier 1A`) permiten a los agentes editar notebooks o definiciones TMDL complejas sin sobrecargar la ventana de contexto.
-- **Vector ADN Arquitectónico:** El archivo `01_seed/seed-idirectoryfabric-master.md` actúa como la referencia canónica para diseño de sistemas, reglas de negocio y límites de capacidad.
+- **Vector ADN Arquitectónico:** El archivo `01_seed/seed-idirectoryfabric-master.md` actúa como la referencia canónica para diseño de sistemas, contratos de carpetas y límites de capacidad.
 
 ---
 
@@ -166,5 +159,5 @@ $$\text{topology\_hash} = \mathcal{H}_{\text{SHA256}}\left(\bigoplus_{i=1}^{N} \
 ## 8. Licencia y Autoría
 
 - **Arquitectura y Concepción:** Diseñado por **Gravity HyperScale Thinking**.
-- **Calibración Corporativa:** Adaptado para **Santolaya** (Constructora e Inmobiliaria, Chile).
+- **Alcance del Blueprint:** Esquema de Directorio Base Universal para **Microsoft Fabric Git Integration**.
 - **Licencia:** Licencia MIT. Consulta [LICENSE](LICENSE) para más detalles.

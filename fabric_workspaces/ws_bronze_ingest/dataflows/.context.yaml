@@ -1,0 +1,13 @@
+version: 1.0
+directory: fabric_workspaces/ws_bronze_ingest/dataflows
+role: bronze_ingestion
+purpose: Contenedor base para artefactos *.Dataflow Gen2 de ingesta y extraccion ligera hacia OneLake Bronze.
+relevance: medium
+crawl: true
+read_priority: p2
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Alojar aqui artefactos *.Dataflow con su archivo .platform y mashup.pq / definicion JSON.
+

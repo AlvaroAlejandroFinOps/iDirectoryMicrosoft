@@ -2734,19 +2734,50 @@ def route_file(
         raise PermissionError(f"[-] Error de Seguridad: Intento de Path Traversal bloqueado. El archivo '{src_resolved}' está fuera de la raíz '{base_dir}'.")
     ext = src_file.suffix.lower()
     name_lower = src_file.name.lower()
+    has_fabric_ws = (base_dir / "fabric_workspaces").is_dir()
 
-    if ext == ".py":
+    fabric_item_exts = {
+        ".lakehouse", ".notebook", ".datapipeline", ".copyjob", ".dataflow",
+        ".warehouse", ".semanticmodel", ".report", ".environment",
+        ".mirroreddatabase", ".kqldatabase", ".eventstream", ".mlmodel",
+        ".sqldatabase", ".graphqlapi"
+    }
+
+    if has_fabric_ws and (ext in fabric_item_exts or ext in {".tmdl", ".pbism", ".pbir", ".pbip"}):
+        try:
+            from src.fabric.medallion import resolve_fabric_target_folder
+            dest_subfolder = resolve_fabric_target_folder(src_file.name)
+        except Exception:
+            dest_subfolder = "fabric_workspaces/ws_silver_transform/notebooks"
+    elif ext == ".py":
         if "test" in name_lower or "spec" in name_lower:
             dest_subfolder = "tests"
+        elif has_fabric_ws and name_lower == "notebook-content.py":
+            dest_subfolder = "fabric_workspaces/ws_silver_transform/notebooks"
         else:
             dest_subfolder = inspect_python_header(src_resolved)
+            if has_fabric_ws and dest_subfolder == "src/cloud_jobs":
+                try:
+                    from src.fabric.medallion import resolve_fabric_target_folder
+                    dest_subfolder = resolve_fabric_target_folder(src_file.name, item_type="Notebook")
+                except Exception:
+                    dest_subfolder = "fabric_workspaces/ws_silver_transform/notebooks"
     elif ext == ".sql":
         if "test" in name_lower or "spec" in name_lower:
             dest_subfolder = "tests"
+        elif has_fabric_ws:
+            dest_subfolder = "fabric_workspaces/ws_gold_analytics/warehouses"
         else:
             dest_subfolder = "src/cloud_jobs"
     elif ext == ".ipynb":
-        dest_subfolder = "03_research/notebooks"
+        if has_fabric_ws:
+            try:
+                from src.fabric.medallion import resolve_fabric_target_folder
+                dest_subfolder = resolve_fabric_target_folder(src_file.name, item_type="Notebook")
+            except Exception:
+                dest_subfolder = "fabric_workspaces/ws_silver_transform/notebooks"
+        else:
+            dest_subfolder = "03_research/notebooks"
     elif ext in [".md", ".txt", ".pdf"]:
         if any(w in name_lower for w in ["obsoleto", "historico", "old", "backup", "archive", "superseded"]):
             dest_subfolder = "artifacts/plans/archive"
