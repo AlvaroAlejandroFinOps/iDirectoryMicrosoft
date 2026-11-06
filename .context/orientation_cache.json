@@ -3,14 +3,14 @@
     ".": {
       "beacon_chain_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "beacon_hash": "29e02afbcbc4a62b3d955593f853063b09bd47dfaac65d45221ae9ff2f1be606",
-      "fingerprint": "c828c8f633088c6f7e5bdf7638492e99ccb42f662085cfc87395d62682b1daf1",
+      "fingerprint": "3a3f25fc64dc66f36ac4f6f46771a176589c44ba9850cb1dad73fcab9274d5ed",
       "pack": {
         "crawl": true,
         "edges": {
           "01_seed": "child",
-          "02_foundation": "child",
-          "03_research": "child",
-          "artifacts": "child"
+          "artifacts": "child",
+          "config": "child",
+          "docs": "child"
         },
         "files": [
           "AGENTS.md(~365t)",
@@ -32,12 +32,12 @@
     "01_seed": {
       "beacon_chain_hash": "e726266e3bc4a9b52954eee1eef7621667093ec3726c86416ea3fe881bd12f94",
       "beacon_hash": "996d840903829140e283d9ce4bc4177aefc2a00b7bc12d9c125cf3f2d9dd2362",
-      "fingerprint": "fa3625d07e89bc671fc0a057269953160033c211cfa815f8e3ca031795a0a0c2",
+      "fingerprint": "30a4264fc0914216da5b9f4f7ac88ce6e9ba9aee87594b6918b26bd1644a39e1",
       "pack": {
         "crawl": true,
         "edges": {},
         "files": [
-          "seed-idirectory-master.md(~12639t)"
+          "seed-idirectory-master.md(~4925t)"
         ],
         "focus": "01_seed",
         "idir_pack": "6.0",
@@ -48,90 +48,10 @@
         "tier": "1a"
       }
     },
-    "02_foundation": {
-      "beacon_chain_hash": "aae0a5f04bbcf36c129d3d8029ddabd3ded307f5639d6e9261353201ca8ab8f6",
-      "beacon_hash": "b84d398580e571158a1fc3d617313645acca4993fde159cfb7da62451b878a40",
-      "fingerprint": "75c51cbd253b550b0644256f2cea61a26a697aca457f2f9fc4e8715e5e02fc1d",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "02_foundation/engine": "child"
-        },
-        "files": [],
-        "focus": "02_foundation",
-        "idir_pack": "6.0",
-        "instructions": "Sin lógica propia. Leer el beacon del subdirectorio objetivo.",
-        "prio": "p2",
-        "role": "namespace",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "02_foundation/engine": {
-      "beacon_chain_hash": "eb04bd52fbc27608b5a23da93e8007a2d7cfca8bba69ae78013c776af297ff20",
-      "beacon_hash": "525cd5a3d61fce6f40bdddf3acc87c26466f4fa368adfefff5a56d0861505229",
-      "fingerprint": "c460c065415db22078e82163be6f36f34dab27ee5c6ee2fbe6dde4bb07b15af8",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "02_foundation": "parent"
-        },
-        "files": [
-          "engine_readme.md(~1125t)"
-        ],
-        "focus": "02_foundation/engine",
-        "idir_pack": "6.0",
-        "inherited_from": "02_foundation",
-        "instructions": "Contiene los utilitarios de gobernanza y especificación formal de directorios.",
-        "prio": "p1",
-        "role": "core_engine",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "03_research": {
-      "beacon_chain_hash": "37d9f5dae99b8da9ed3113712db0a11b93cfe80bd93d2ec2c7dc38bc651513d0",
-      "beacon_hash": "a0885a0b00da1ee6cc6319f14ac6d0f0d0410f42efb0159fe4f5da9ce2171e61",
-      "fingerprint": "c809b7bc95f9632780440b8fbce64f5a2f241cbb0361883ca974b567db62494a",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "03_research/prompts": "child"
-        },
-        "files": [],
-        "focus": "03_research",
-        "idir_pack": "6.0",
-        "instructions": "Sin lógica propia. Leer el beacon del subdirectorio objetivo.",
-        "prio": "p2",
-        "role": "namespace",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "03_research/prompts": {
-      "beacon_chain_hash": "6c204d365340667644adb0dca4e6ffe4908b889ed96a574e21eb27033f9bb31d",
-      "beacon_hash": "d269ea009fcc9d12c4ca4b5c48842c1c39631611f98578d06d3a65477ca3622b",
-      "fingerprint": "e0b841fe095bab641278838f6c243639ab5292b9d1ce622d6b823fc232cb2768",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "03_research": "parent"
-        },
-        "files": [],
-        "focus": "03_research/prompts",
-        "idir_pack": "6.0",
-        "inherited_from": "03_research",
-        "instructions": "Plantillas de inferencia y configuración de agentes.",
-        "prio": "p1",
-        "role": "prompt_engineering",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
     "artifacts": {
       "beacon_chain_hash": "b712c56187912ad28dacd707ae67e524e750a5866005351bbbe22f521c0815fd",
       "beacon_hash": "1c27fb78f03b685610c9fbd91504da3b1fccaf5ac011d9f89fb8c94cc3f69da0",
-      "fingerprint": "dd4b136c8e7c366f4966a849dcbe9128a68d837cf76b1cb2a11780f4424fcf42",
+      "fingerprint": "d572353ca1838c805934f256359e3e76a438d2e61bcd0fc78436b685162d0117",
       "pack": {
         "crawl": true,
         "edges": {
@@ -153,7 +73,7 @@
     "artifacts/benchmarks": {
       "beacon_chain_hash": "0cf18853dd49dabd25eb12cb6e8df346019268695240bec652677884a9a0b02f",
       "beacon_hash": "8fc836fa63cd66ae150a82563e54573a59c75b95859227d23c32ccff11cbd874",
-      "fingerprint": "3001428193fa8ba89c00b51125b27d93e2cd4ef37ab79dca68491a7801e418a1",
+      "fingerprint": "bd38b34afc95ed5a1e2af18020d8a79fef59072d6926a55d006ec2d7e1aeaee3",
       "pack": {
         "crawl": true,
         "edges": {
@@ -180,7 +100,7 @@
     "artifacts/plans": {
       "beacon_chain_hash": "fb18840ae8ee15ffde0d43ac1efea6f29106582bf1a9a4700b8fec12d4793a1b",
       "beacon_hash": "8a8cff52812648899a01af9da32f84f7f3ac49645ba7e729092b8dd2e1881f4a",
-      "fingerprint": "c2a00a6df9c247652f768656f2b3db38d0c5975ff77012471a05869838afbe00",
+      "fingerprint": "fc2e5f2edb0b180292e107548963da9d9fe7cf8ad061d1b7f0ce0ba9250db1dc",
       "pack": {
         "crawl": true,
         "edges": {
@@ -203,7 +123,7 @@
     "artifacts/plans/active": {
       "beacon_chain_hash": "dd279d09e43cc951ce084df2699ddb024f66d074ab393684261ae581fd303bd8",
       "beacon_hash": "4099ccf8eeb2b31acd32ca9fe98dc35988cc70c149825027948b31a8bf8406f4",
-      "fingerprint": "f9de231bbd88c7d3b222320ef806133364b814bbbda99eecb3e7993c34064458",
+      "fingerprint": "45664951214d5910217bfdbd10dc292e86f02afce88f19fa674ac6b281e522c7",
       "pack": {
         "crawl": true,
         "edges": {
@@ -225,7 +145,7 @@
     "artifacts/plans/openia": {
       "beacon_chain_hash": "f5dafb5a41544eee8aa8cc8237028e786ad7310397c05c457db419258fb66346",
       "beacon_hash": "657ab6156bcab1982842f9c849e72c718281272645036b04bd4ea9bf2c22509c",
-      "fingerprint": "8d7efeb758b6924c05486c341d31aa78ef92338a36da716cd1b6d5b058a23ae5",
+      "fingerprint": "f41649213eeebc101f0b66514c2c462fc441ce4ea315c6841afb5fcc40b8a182",
       "pack": {
         "crawl": true,
         "edges": {
@@ -247,7 +167,7 @@
     "config": {
       "beacon_chain_hash": "ceabe8ac96ad505fb82d97ea542c4c35d50a4c572bfb507ff2e33e6e3f23bf32",
       "beacon_hash": "6c2651b95e2d4b9daa0c4c6ed9fc950355fafa09491a7f72fd7351e29a0684e9",
-      "fingerprint": "5e7f5081d2902d3408cd5b318e3c29017baa657158e129b6b3710b7ecb0f296f",
+      "fingerprint": "15238991f8dc89ab9c0c4c9139cfe84a5d822bef8a1bd5109fa3cd555d236f1e",
       "pack": {
         "crawl": true,
         "edges": {},
@@ -263,27 +183,10 @@
         "tier": "1a"
       }
     },
-    "data": {
-      "beacon_chain_hash": "45440e7801003151c7696da0304cf58284630c367e7f2f5e6c28a73b30823639",
-      "beacon_hash": "d108fe4debd72eff088f9c8412387d8fef4eed9c296aacd2ce7f5ed27f6c8797",
-      "fingerprint": "95935357b744c8f11ccbb8a23d94e45bdbd3beac9040b6082cc31c65c72ee203",
-      "pack": {
-        "crawl": true,
-        "edges": {},
-        "files": [],
-        "focus": "data",
-        "idir_pack": "6.0",
-        "instructions": "Sin lógica propia. Leer el beacon del subdirectorio objetivo.",
-        "prio": "p2",
-        "role": "namespace",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
     "docs": {
       "beacon_chain_hash": "6317216f276a6094b4ff7e3c8b984c330768ed6f05a9bda7d4e8c08100c348db",
       "beacon_hash": "4e29d13909f0f78ed4a7526ed4c6f9064abb3ccd6ee4c8467a4badc3cd3209b4",
-      "fingerprint": "88d5a4077f3148e0bf68583fecb20e3b5066e8461664b4ccc7b769857bb8432b",
+      "fingerprint": "ea86a0ad38916a8d0908730e622d980fda395b0b2b60094c11a26dd1b0194cd1",
       "pack": {
         "crawl": true,
         "edges": {
@@ -304,7 +207,7 @@
     "docs/architecture": {
       "beacon_chain_hash": "616f5eb96b14d0fc27bea2ab6157774c828cbf28ac8c0e70c759b157c100b181",
       "beacon_hash": "579ac3a434b5f233b8ab64811f475dcc1275ed6df7c60a959dc7dcd62e8e8d90",
-      "fingerprint": "ecec50a219964eed9d18e401f68d9faf8ea15e7ad3884b4fc68a6537c98655be",
+      "fingerprint": "88920ad13a4a18007699bc2dd27d03a951580e52555d01d6946f27d1dedc24d0",
       "pack": {
         "crawl": true,
         "edges": {
@@ -328,7 +231,7 @@
     "docs/notes": {
       "beacon_chain_hash": "8e769560aea5a62afcb49a4fafe7dc902f7f02986513674c34c1797d5983f024",
       "beacon_hash": "0f908d7156270d3f06214795029bafbef351231876d83e1341f0d353fbb1f704",
-      "fingerprint": "3eff4a6c82bcd8d253230be874c83c9ac98354ce96a49da18e9f1753090886ea",
+      "fingerprint": "d1cf5318333b28238f0994de15f31f4c746cfce5cf4b5899a2bec313cd67160a",
       "pack": {
         "crawl": true,
         "edges": {
@@ -348,7 +251,7 @@
     "docs/specs": {
       "beacon_chain_hash": "4ff20867668ab6e5924242804fe4cc1e878c0402a169ae0b2338e25a00b95c6a",
       "beacon_hash": "d399e0fc46ebb7ba355d1446f1807e77fd98f1e6837057a5c0ea09116293f465",
-      "fingerprint": "43da712ef866809db4550511cb79895130487ff6e099d6e876f93e9c2afbce04",
+      "fingerprint": "5530a1a63d6508996128233b5c7881a239b061a671d80ab0bbaace15e1936e89",
       "pack": {
         "crawl": true,
         "edges": {
@@ -370,43 +273,347 @@
         "tier": "1a"
       }
     },
-    "infrastructure": {
-      "beacon_chain_hash": "c4a793087d774287ed108554064aae410772fc9632d824423746007b95620e50",
-      "beacon_hash": "18e1b9b9eb095fdb022790a0ea48aed063f8c6be0c633865c19e341f1fa2dfc6",
-      "fingerprint": "e43089bb92a72b09580485e34a582bc9784514305671789bbccaf126d11a774e",
+    "fabric_workspaces": {
+      "beacon_chain_hash": "39e9afbc351eac05b475abf6f10000e8d4054fb8cad801436cbd464e9edeea89",
+      "beacon_hash": "7789f3fccf38c69a17d90b73af879c08349fad408f6b41c550668989e8eeb704",
+      "fingerprint": "afb50d158fc580f6a173428a20aa34cd97b2ef164fe15fb0ee06710050e1fd5d",
       "pack": {
         "crawl": true,
-        "edges": {},
+        "edges": {
+          "fabric_workspaces/ws_bi_semantic": "child",
+          "fabric_workspaces/ws_bronze_ingest": "child",
+          "fabric_workspaces/ws_core_governance": "child"
+        },
         "files": [],
-        "focus": "infrastructure",
+        "focus": "fabric_workspaces",
         "idir_pack": "6.0",
-        "instructions": "Extensión de dominio. Enriquecer con /idir enrich.",
+        "instructions": "Extensión de dominio activa. Enriquecer con /idir enrich si añade contratos.",
         "prio": "p1",
         "role": "domain_extension",
         "seed_ref": "optional",
         "tier": "1a"
       }
     },
-    "schemas": {
-      "beacon_chain_hash": "2209a3d179669ada8610d1bc4385ee75a777ed80cbd67678bb80f1ebb7df8009",
-      "beacon_hash": "7de72434b0ffd7567b5faf10cd364ce01e6c776532cf3ef0bee378527d4b07ae",
-      "fingerprint": "c74f8c0e2fc8cb48c1e3a2678b40926664d9f3b2adec54dfea5496e7c860a430",
+    "fabric_workspaces/ws_bi_semantic": {
+      "beacon_chain_hash": "9d8e0fe1e907b261542d289a57e4e5d934f72bdcc72bea8cea97bf731a55e9f4",
+      "beacon_hash": "defa0ceda68e9b6203c8ba6c9ab61cafe4d6def2b53c3dc4bba5f347de7cd86f",
+      "fingerprint": "750f82ed45bc531f973c89037c9f3043124a95b43f15290d001384dc94d41eb8",
       "pack": {
         "crawl": true,
-        "edges": {},
-        "files": [
-          "backlog.schema.json(~433t)",
-          "beacon.schema.json(~520t)",
-          "checkpoint.schema.json(~614t)",
-          "contracts_ast.schema.json(~895t)",
-          "icontext_bus.schema.json(~1717t)",
-          "inventory.schema.json(~167t)"
-        ],
-        "focus": "schemas",
+        "edges": {
+          "fabric_workspaces": "parent",
+          "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report": "child",
+          "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel": "child"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_bi_semantic",
         "idir_pack": "6.0",
-        "instructions": "Contratos formales de datos. Consultar antes de emitir transformaciones SQL o PySpark.",
+        "inherited_from": "fabric_workspaces",
+        "instructions": "Hereda directivas de fabric_workspaces/.",
         "prio": "p1",
-        "role": "data_contracts",
+        "role": "bi_semantic",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report": {
+      "beacon_chain_hash": "99c5b7603da125d89bb8a20fed454a5ac8cfccb050f18ee07f99af87ac6b7604",
+      "beacon_hash": "df99edbb7be343d6312f8efb962ad9a874e7e74df9e0dbd3388ed37d04c8d690",
+      "fingerprint": "23dadfb737237a797b24e8a12dd10ad892078347dd4beae560ad420f0261ff1c",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bi_semantic": "parent"
+        },
+        "files": [
+          "definition.pbir(~38t)"
+        ],
+        "focus": "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bi_semantic",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_bi_semantic/.",
+        "prio": "p1",
+        "role": "bi_semantic",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel": {
+      "beacon_chain_hash": "d21fee6ee5b536e8bea55018d480d572e6a5c6b72b0e1407a5d8540a4d0967c9",
+      "beacon_hash": "9018585b34c07b72491b996f042661d6003c5e9d7261c158e3bc9842a1584506",
+      "fingerprint": "9dd23d75e9ad13d4bda5a705b9e4925481549a085fd175938ea3425519f4d944",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bi_semantic": "parent",
+          "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition": "child"
+        },
+        "files": [
+          "definition.pbism(~22t)"
+        ],
+        "focus": "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bi_semantic",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_bi_semantic/.",
+        "prio": "p1",
+        "role": "bi_semantic",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition": {
+      "beacon_chain_hash": "c9c9679f190fad8f0b29812a4cc6eaa10713067322773959fc1a341dff0b5650",
+      "beacon_hash": "d3ca5bba969e9d3ce1b2e6c128b3c12ce7bd4c7b1320af6988be7d36888d9285",
+      "fingerprint": "3c8c3cc2c46e88cbdbb61a49dccedae0e88ba62a90213b7d307b36f07a6309b7",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel": "parent"
+        },
+        "files": [
+          "model.tmdl(~104t)"
+        ],
+        "focus": "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/.",
+        "prio": "p1",
+        "role": "bi_semantic",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bronze_ingest": {
+      "beacon_chain_hash": "cb1e2ae88fb89e134736bf8acd43fa1df4534c5f91dec139d098d6ddbdbd6409",
+      "beacon_hash": "ec79595644ed1fc7402e7d819dcca55335bdcb9402e9aff96a4bd12180bbcf2d",
+      "fingerprint": "05cf34dc5a3e4388455bc088d20de828cc88d0b50af2437e7e72700a1175b579",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces": "parent",
+          "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse": "child",
+          "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline": "child"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_bronze_ingest",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces",
+        "instructions": "Hereda directivas de fabric_workspaces/.",
+        "prio": "p1",
+        "role": "bronze_ingestion",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse": {
+      "beacon_chain_hash": "6117956fea3b7e00698ab951810eced69f847dc5dcdef00d8621666b09dcc8ee",
+      "beacon_hash": "ebe14556cf4a7af2e63cac926e2b64f73229b16243adf264f967ee65c04cc6e3",
+      "fingerprint": "17e5b50e493a12155b9991e62da0f04af1f3efc4984b583d2cdfdd32a9bbde29",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bronze_ingest": "parent"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bronze_ingest",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_bronze_ingest/.",
+        "prio": "p1",
+        "role": "bronze_ingestion",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline": {
+      "beacon_chain_hash": "64b90703ffb40ac4163e777c9eeacd16fd751f1ab756c4ff518d2a4ef7f6d246",
+      "beacon_hash": "fb4850c29b9ed1bb3b581eb02ec48677dba04e334ab1d135b004d68a0a853535",
+      "fingerprint": "f5a5a899c2c4218d9df9444c36324afcb6ccba3e8ea78341da8f2b7f58c6cc4e",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_bronze_ingest": "parent"
+        },
+        "files": [
+          "pipeline-content.json(~181t)"
+        ],
+        "focus": "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_bronze_ingest",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_bronze_ingest/.",
+        "prio": "p1",
+        "role": "bronze_ingestion",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_core_governance": {
+      "beacon_chain_hash": "5b23cc044990715dff379c0e5ed200c46763834e63a869136e7db2a5b0be24c2",
+      "beacon_hash": "8a27c424eea1d7bfb0a02049fdbf6686fba0b4d1cc4b8e9fd7d9a9717374be73",
+      "fingerprint": "b4fcc5feb1ee8029205a390b7d82da67f5dcf5a8783e4921047cd5ed9a96d18f",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces": "parent",
+          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment": "child",
+          "fabric_workspaces/ws_core_governance/libraries": "child"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_core_governance",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces",
+        "instructions": "Hereda directivas de fabric_workspaces/.",
+        "prio": "p1",
+        "role": "core_governance",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment": {
+      "beacon_chain_hash": "9c54e5ebb02a86321cbdf1c4a0d5b095da0e8ae38058232fd3dd3ebe2f1ae01b",
+      "beacon_hash": "993ea90a98b3cfdba1020649d68a1ea8709fa83b78ff5e20cd09736c567fc20e",
+      "fingerprint": "38ee6e64531e9245a433e9a8b6f19ab48787e310ae180dd70c2955cd0f4f2701",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_core_governance": "parent",
+          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting": "child"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_core_governance",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/.",
+        "prio": "p1",
+        "role": "core_governance",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting": {
+      "beacon_chain_hash": "4213c6ace82f1f8dcd4f488428fab10af863ca229034a95dbde76277dd73f28f",
+      "beacon_hash": "c6c5bb764723c3dcfa06c18b4bf8d01cbe3a76678b334da5c8f5a6f3fef5c335",
+      "fingerprint": "99eb4745df457d8a800b3ece5a093f515677f0d4b83a154227ac292805a25fbd",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment": "parent"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/.",
+        "prio": "p1",
+        "role": "core_governance",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/spark": {
+      "beacon_chain_hash": "8ff0c2ee5d1e4246536d0612e23402dd4bd8e5add87254dcd2f474631bcd2629",
+      "beacon_hash": "3ad5a9343ce6b332d6341ca0a62939cbe45106ecef6a21160e654b2e4856bf98",
+      "fingerprint": "5dd8f6d1912448a71475490edd94773b760dba11199ce5096a7d5b59cfb132c3",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting": "parent"
+        },
+        "files": [
+          "compute.json(~139t)"
+        ],
+        "focus": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/spark",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/.",
+        "prio": "p1",
+        "role": "core_governance",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_core_governance/libraries": {
+      "beacon_chain_hash": "440784280fccc19718f3992250d32b342fbd211ed7857738ed8fbfadfff263da",
+      "beacon_hash": "ef15e19d2ef2354441c5f97a8d67d949f6b433ca664879cd20f1df6e867ab4c0",
+      "fingerprint": "5083b0aa4e4cf1ec2e45276c0aa347a6354646203bb22851a07528085b739fd8",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_core_governance": "parent"
+        },
+        "files": [
+          "santolaya_chile_utils.py(~418t)"
+        ],
+        "focus": "fabric_workspaces/ws_core_governance/libraries",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_core_governance",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_core_governance/.",
+        "prio": "p1",
+        "role": "core_governance",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_gold_analytics": {
+      "beacon_chain_hash": "bde8b733c3f8b145d81e09ab954fdbd9f1d993cff310894558d6ad6703bcc702",
+      "beacon_hash": "5506a5770e546085b70ab18815df738ba3cd419eecf1af4614e0af83c9c06aa9",
+      "fingerprint": "e2e5f85da2595d1cac1be74d22e59f5afc07f4b699f6c5d424a8d1afd7a88590",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces": "parent",
+          "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook": "child",
+          "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse": "child"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_gold_analytics",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces",
+        "instructions": "Hereda directivas de fabric_workspaces/.",
+        "prio": "p1",
+        "role": "gold_dimensional",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook": {
+      "beacon_chain_hash": "e4a72fdb2ad7d48cd93ab660838dbfca03c5838dd173dce4ab262e63df93a0e6",
+      "beacon_hash": "20fe7688dd8b10b73cbfe768a5bb84774a1031e3d471db14058798db79a7fa05",
+      "fingerprint": "252351b6a1b0781f9083c710e7d51425d1c82099947cf83d5248d5ed354841ea",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_gold_analytics": "parent"
+        },
+        "files": [
+          "notebook-content.py(~439t)"
+        ],
+        "focus": "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_gold_analytics",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_gold_analytics/.",
+        "prio": "p1",
+        "role": "gold_dimensional",
+        "seed_ref": "optional",
+        "tier": "1a"
+      }
+    },
+    "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse": {
+      "beacon_chain_hash": "f7b6352b7f88153750fc9197bc3576934f30a15fa35a3d7bcd554b45f63ad865",
+      "beacon_hash": "7483c0ec30a704db693da1182beec8cdc9af64300baf07e434631cd95072a0b3",
+      "fingerprint": "259336bc3890d75ca93fedc93bdf8db0e5eefda7fd0c5985b14db84db3a44238",
+      "pack": {
+        "crawl": true,
+        "edges": {
+          "fabric_workspaces/ws_gold_analytics": "parent"
+        },
+        "files": [],
+        "focus": "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse",
+        "idir_pack": "6.0",
+        "inherited_from": "fabric_workspaces/ws_gold_analytics",
+        "instructions": "Hereda directivas de fabric_workspaces/ws_gold_analytics/.",
+        "prio": "p1",
+        "role": "gold_dimensional",
         "seed_ref": "optional",
         "tier": "1a"
       }
@@ -414,7 +621,7 @@
     "scripts": {
       "beacon_chain_hash": "bec0aa7880deb21e2f5162064cbba140e70b67f80090b9f2f7246ef5de003210",
       "beacon_hash": "d236725ac174c56326279ba8de0c15bdd98f853bd2fd5ba329fc73f8ac8a39f1",
-      "fingerprint": "2c89b8ce27fe0cdea5924e530518ea17a100d9440bf495dbe8890de2f5b8ac97",
+      "fingerprint": "f8d8566341583e51abeb3e277c33c5af0234b1a8aff08f8255b65fa95f519a39",
       "pack": {
         "crawl": true,
         "edges": {},
@@ -430,103 +637,15 @@
         "tier": "1a"
       }
     },
-    "skills": {
-      "beacon_chain_hash": "33097dd9fd3745aeb07167b4211b971463c2efb044acf918dd613c1738952ce2",
-      "beacon_hash": "30e51476b593c7baad42407b3eb8f70adba2b6a25f3516679bdea069a6671ef0",
-      "fingerprint": "922a6fc30e59998d24472185be611d2060fc78719d8520725e3b35bede43ea2a",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "skills/v6": "child"
-        },
-        "files": [],
-        "focus": "skills",
-        "idir_pack": "6.0",
-        "instructions": "Extensión de dominio activa. Enriquecer con /idir enrich si añade contratos.",
-        "prio": "p1",
-        "role": "domain_extension",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "skills/v6": {
-      "beacon_chain_hash": "79bb34c7f3f43df5ad440f9be3501080322f8bc2a7612bad32a6021ba19d3a14",
-      "beacon_hash": "75a0c31a0f6a7a3cf224c317d118caeb81e447716146322e1f476755902e2fa6",
-      "fingerprint": "d6353047f4799606d724f55d0eaecf0e7b09911bfad7da8a14eb3a881f98007b",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "skills": "parent",
-          "skills/v6/idir": "child"
-        },
-        "files": [],
-        "focus": "skills/v6",
-        "idir_pack": "6.0",
-        "inherited_from": "skills",
-        "instructions": "Hereda directivas de skills/.",
-        "prio": "p1",
-        "role": "domain_extension",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "skills/v6/idir": {
-      "beacon_chain_hash": "c24916bb99cde62afe69e0ffced97802ad75c1e80ffe8d7908512164f3647277",
-      "beacon_hash": "5265cbfc9a25927bf329ddda3fed3c1c5f867ced42a807eeada169d9a4d73b25",
-      "fingerprint": "29009ab265bff9664339cb520d4fb8c43b6c8be53b50b2b3a91a6ed7c5684e36",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "skills/v6": "parent",
-          "skills/v6/idir/scripts": "child"
-        },
-        "files": [
-          "SKILL.md(~314t)",
-          "bundle.json(~67t)"
-        ],
-        "focus": "skills/v6/idir",
-        "idir_pack": "6.0",
-        "inherited_from": "skills/v6",
-        "instructions": "Hereda directivas de skills/v6/.",
-        "prio": "p1",
-        "role": "domain_extension",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "skills/v6/idir/scripts": {
-      "beacon_chain_hash": "11684ce0344a993df83d98ecfb827dd98235b990beeb8dbb5d7bc5110af29eac",
-      "beacon_hash": "e6496207367291c22784031c192b55448de816d71f18ff00d1d95a330a4b1926",
-      "fingerprint": "e91b28859f84f276fc3b97c9fb29f72b47a0cab65b47a29800a1d9335b172398",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "skills/v6/idir": "parent"
-        },
-        "files": [
-          "run.py(~380t)"
-        ],
-        "focus": "skills/v6/idir/scripts",
-        "idir_pack": "6.0",
-        "inherited_from": "skills/v6/idir",
-        "instructions": "Hereda directivas de skills/v6/idir/.",
-        "prio": "p1",
-        "role": "domain_extension",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
     "src": {
       "beacon_chain_hash": "98ac1252d59ae427f33430bd2b89584bc0458731919c34b7baba2da1bf3074db",
       "beacon_hash": "addcfad416dbf2ab0a8c4c70a14e7cac020e7fd5ba4fad95824e18f0a03430f2",
-      "fingerprint": "d3a8c23c78d353ed3614d211ac62713404f75543c85c11f5477b01d3dbec8153",
+      "fingerprint": "ab750f398ee2ee6c16252b5a0d78c4fd823cbef6f3dd325efa30f593e24d4251",
       "pack": {
         "crawl": true,
         "edges": {
-          "src/cloud_jobs": "child",
           "src/core": "child",
-          "src/dashboards": "child",
-          "src/data_generation": "child"
+          "src/fabric": "child"
         },
         "files": [],
         "focus": "src",
@@ -538,30 +657,10 @@
         "tier": "1a"
       }
     },
-    "src/cloud_jobs": {
-      "beacon_chain_hash": "18df6df92f5615e66fd81ae517051babf5916235b7ffd24bce186f9385640582",
-      "beacon_hash": "080114eb7b268bb0a43fdd06716b57d9c7e5ab7b7efe1b130a76fc28372c1ffc",
-      "fingerprint": "067e6b03c16bdbb189a57656944e53824e87651760b12cb5d8e89d2bab6cf7b2",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "src": "parent"
-        },
-        "files": [],
-        "focus": "src/cloud_jobs",
-        "idir_pack": "6.0",
-        "inherited_from": "src",
-        "instructions": "Cargas productivas de datos. Conservar invariantes de arquitectura e idempotencia.",
-        "prio": "p1",
-        "role": "production_pipelines",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
     "src/core": {
       "beacon_chain_hash": "829405288781fa9f1a809c6c56043c2ec0247b5f9f44d89c27104a8ebb320146",
       "beacon_hash": "216ca5fb1a473346db22eef1a7dbdc12a2503b316191de44b943c7b932f0044c",
-      "fingerprint": "c7550ff31883ba03dab4d620bdde66b8c8f2433152b476ce190a64c68cbe45f6",
+      "fingerprint": "4d8a6ab122c5f1d38a14cc89709c6cbbd1e0560ea4411cb8376fd83578cee063",
       "pack": {
         "crawl": true,
         "edges": {
@@ -569,7 +668,7 @@
         },
         "files": [
           "context_runtime.py(~5713t)",
-          "fwengine.py(~44799t)"
+          "fwengine.py(~45141t)"
         ],
         "focus": "src/core",
         "idir_pack": "6.0",
@@ -581,50 +680,10 @@
         "tier": "1a"
       }
     },
-    "src/dashboards": {
-      "beacon_chain_hash": "99ba11908d0ddbc04d89710382bb118ae58376816ffcb558cc304304e211547d",
-      "beacon_hash": "e11d8ac04924a0027fc5cf235deb40a8ba9b69fcf4b80ec0a2f06dfd63cb2ccd",
-      "fingerprint": "128a8aa54e0f21fee440a1c04c2d1256baffd56a9d7a78dc8c809ebc8c6debf7",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "src": "parent"
-        },
-        "files": [],
-        "focus": "src/dashboards",
-        "idir_pack": "6.0",
-        "inherited_from": "src",
-        "instructions": "Aplicaciones de visualización frontend y consumo analítico.",
-        "prio": "p2",
-        "role": "bi_viz",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
-    "src/data_generation": {
-      "beacon_chain_hash": "941293beea813940949a7bb2ffd8815451153d2080375ef14e94725b58b82fc3",
-      "beacon_hash": "9c31c842c29dc16990acf7880e6fa7b502ddfdfb4ff20f7f57ab1195bd593611",
-      "fingerprint": "cb5ca06b9269ae335dda36fb8ff51c17eb2af05b315cf1c3271666a400152ea3",
-      "pack": {
-        "crawl": true,
-        "edges": {
-          "src": "parent"
-        },
-        "files": [],
-        "focus": "src/data_generation",
-        "idir_pack": "6.0",
-        "inherited_from": "src",
-        "instructions": "Generadores de pruebas de carga y benchmarking sintético.",
-        "prio": "p2",
-        "role": "synthetic_data",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
-    },
     "tests": {
       "beacon_chain_hash": "aae40b2cfe5b9735d23cd69fd2a9f23197625aceb5900b25cbb949c9de4f7b2a",
       "beacon_hash": "7e91a77a62b63ae5520c615174a49a5545610e1dd472efcac76c7e86bcd1079a",
-      "fingerprint": "79bae010253e4e7fdc2f9d47defb3c8288e9a5ec8f59c1c5255585cb07981ba8",
+      "fingerprint": "1945055482067487d0dc5d3d162ae6f647172f0270953eed72032cabe88bc66d",
       "pack": {
         "crawl": true,
         "edges": {},
@@ -640,28 +699,9 @@
         "seed_ref": "optional",
         "tier": "1a"
       }
-    },
-    "tools": {
-      "beacon_chain_hash": "90bcd7d5452969ee4a591aa285654eab0a5a894156fe801316dd0b82c78222e9",
-      "beacon_hash": "e5fc97b97c72967c1dbe6b05656ee616dc7e6b6cafdce126aba4fb8981dff6e5",
-      "fingerprint": "88be51f8a6deb51b9fa19647ed07347ad91071d2332236205c399bcc84e3549e",
-      "pack": {
-        "crawl": true,
-        "edges": {},
-        "files": [
-          "build_runtime.py(~1778t)"
-        ],
-        "focus": "tools",
-        "idir_pack": "6.0",
-        "instructions": "Herramientas locales del proyecto.",
-        "prio": "p2",
-        "role": "tooling",
-        "seed_ref": "optional",
-        "tier": "1a"
-      }
     }
   },
-  "generation": "9dbc74eab9d5ac78",
+  "generation": "ef37dec4c2944d21",
   "policy_stamp": [
     [
       ".agentignore",
@@ -670,8 +710,8 @@
     ],
     [
       ".gitignore",
-      99,
-      1788297196178876900
+      201,
+      1793544365460800600
     ],
     [
       "config/context_policy.json",

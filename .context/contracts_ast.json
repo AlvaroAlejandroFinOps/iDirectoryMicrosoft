@@ -9,6 +9,7 @@
     "--capsule",
     "--check",
     "--check-freshness",
+    "--classify",
     "--clear",
     "--compact",
     "--constraint",
@@ -29,6 +30,7 @@
     "--phase",
     "--plan-id",
     "--radius",
+    "--remediate",
     "--resolve",
     "--section",
     "--session-id",
@@ -43,8 +45,8 @@
     "--tier",
     "--toc"
   ],
-  "contracts_ast_hash": "4ac4c9be4e57d22a3ae8a189cdbadc79d53bb2e6480ed0ee5755570fa3c11765",
-  "inputs_hash": "9dbc74eab9d5ac783effcd2b6be9e71a981b1172ecaacc0c83b0ba65fa40e76f",
+  "contracts_ast_hash": "561ea4f996456618dbdee0e7436fa6a4db49c1798c1ef58d29688d5f59361a74",
+  "inputs_hash": "ef37dec4c2944d21c36fd66ffb49d920eca13a75e19a6068356f256ae1e6d4c7",
   "modules": {
     "FWengine.py": {
       "cli_flags": [
@@ -57,6 +59,38 @@
         "icontext_cli",
         "pathlib",
         "sys"
+      ],
+      "signatures": [],
+      "symbols": []
+    },
+    "fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py": {
+      "cli_flags": [],
+      "imports": [
+        "re",
+        "typing"
+      ],
+      "signatures": [
+        "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::validate_chilean_rut(rut_str: str) -> bool",
+        "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::format_chilean_rut(rut_str: str) -> Optional[str]"
+      ],
+      "symbols": [
+        "validate_chilean_rut",
+        "format_chilean_rut"
+      ]
+    },
+    "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook/notebook-content.py": {
+      "cli_flags": [],
+      "imports": [
+        "pyspark.sql"
+      ],
+      "signatures": [],
+      "symbols": []
+    },
+    "fabric_workspaces/ws_silver_transform/nb_curate_costos_obra.notebook/notebook-content.py": {
+      "cli_flags": [],
+      "imports": [
+        "pyspark.sql",
+        "pyspark.sql.types"
       ],
       "signatures": [],
       "symbols": []
@@ -156,6 +190,7 @@
         "--capsule",
         "--check",
         "--check-freshness",
+        "--classify",
         "--clear",
         "--compact",
         "--constraint",
@@ -176,6 +211,7 @@
         "--phase",
         "--plan-id",
         "--radius",
+        "--remediate",
         "--resolve",
         "--section",
         "--session-id",
@@ -203,6 +239,7 @@
         "pathlib",
         "random",
         "re",
+        "src.fabric.cli",
         "stat",
         "sys",
         "threading",
@@ -307,6 +344,93 @@
         "main"
       ]
     },
+    "src/fabric/__init__.py": {
+      "cli_flags": [],
+      "imports": [
+        "medallion",
+        "remediator",
+        "rules"
+      ],
+      "signatures": [],
+      "symbols": []
+    },
+    "src/fabric/cli.py": {
+      "cli_flags": [],
+      "imports": [
+        "medallion",
+        "pathlib",
+        "remediator",
+        "rules",
+        "sys",
+        "typing"
+      ],
+      "signatures": [
+        "./src/fabric/cli.py::run_fabric_cli(argv: List[str], repo_root: Path) -> int"
+      ],
+      "symbols": [
+        "run_fabric_cli"
+      ]
+    },
+    "src/fabric/medallion.py": {
+      "cli_flags": [],
+      "imports": [
+        "enum",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "signatures": [
+        "./src/fabric/medallion.py::MedallionTier(class)",
+        "./src/fabric/medallion.py::read_fabric_platform_metadata(item_dir: Path) -> Dict[str, Any]",
+        "./src/fabric/medallion.py::detect_item_type(path: Path) -> Optional[str]",
+        "./src/fabric/medallion.py::classify_fabric_item(item_path: Path) -> Dict[str, Any]",
+        "./src/fabric/medallion.py::scan_workspace_items(root_dir: Path) -> List[Dict[str, Any]]"
+      ],
+      "symbols": [
+        "MedallionTier",
+        "read_fabric_platform_metadata",
+        "detect_item_type",
+        "classify_fabric_item",
+        "scan_workspace_items"
+      ]
+    },
+    "src/fabric/remediator.py": {
+      "cli_flags": [],
+      "imports": [
+        "pathlib",
+        "re",
+        "typing"
+      ],
+      "signatures": [
+        "./src/fabric/remediator.py::remediate_pyspark_code(code: str) -> Tuple[str, List[str]]",
+        "./src/fabric/remediator.py::remediate_file(file_path: Path, dry_run: bool=False) -> Dict[str, Any]"
+      ],
+      "symbols": [
+        "remediate_pyspark_code",
+        "remediate_file"
+      ]
+    },
+    "src/fabric/rules.py": {
+      "cli_flags": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "re",
+        "typing"
+      ],
+      "signatures": [
+        "./src/fabric/rules.py::audit_pyspark_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+        "./src/fabric/rules.py::audit_pipeline_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+        "./src/fabric/rules.py::audit_tmdl_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+        "./src/fabric/rules.py::audit_fabric_path(target_path: Path) -> List[Dict[str, Any]]"
+      ],
+      "symbols": [
+        "audit_pyspark_content",
+        "audit_pipeline_content",
+        "audit_tmdl_content",
+        "audit_fabric_path"
+      ]
+    },
     "tests/test_fwengine.py": {
       "cli_flags": [],
       "imports": [
@@ -401,8 +525,9 @@
       ]
     }
   },
-  "project": "iDirectory",
+  "project": "iDirectoryFabric",
   "public_symbols": [
+    "MedallionTier",
     "MiniYAML",
     "TestAutoScaffoldAndRemediation",
     "TestBeaconInheritance",
@@ -422,7 +547,11 @@
     "TestV4AdversarialAndContinuity",
     "TestV5FederationAndEcosystem",
     "atomic_write",
+    "audit_fabric_path",
+    "audit_pipeline_content",
+    "audit_pyspark_content",
     "audit_repository",
+    "audit_tmdl_content",
     "bounded",
     "build",
     "build_ast_contracts_index",
@@ -430,11 +559,13 @@
     "build_context_pack",
     "build_ecosystem_pack",
     "check_satellite_freshness",
+    "classify_fabric_item",
     "compute_context_budget",
     "compute_node_fingerprint",
     "compute_topology_hash",
     "contracts_index",
     "crawl_allowed",
+    "detect_item_type",
     "digest",
     "discover_unbeaconed_directories",
     "ensure_beacon_chain",
@@ -443,6 +574,7 @@
     "estimated_tokens",
     "extract_preserved_comments",
     "extract_seed_section",
+    "format_chilean_rut",
     "format_compact_tree_json",
     "format_sliced_tree",
     "generate_beacon_content",
@@ -467,16 +599,21 @@
     "put",
     "python_contracts",
     "query_orientation",
+    "read_fabric_platform_metadata",
     "read_json",
     "reconcile_plans_lifecycle",
     "reconcile_repository",
+    "remediate_file",
+    "remediate_pyspark_code",
     "repository_lock",
     "resolve_beacon",
     "resolve_seed_key_files",
     "route_file",
+    "run_fabric_cli",
     "safe_io_retry",
     "safe_rename_casing",
     "scaffold_beacon_for_dir",
+    "scan_workspace_items",
     "sync_beacons",
     "sync_icontext_bus",
     "sync_tree",
@@ -484,6 +621,7 @@
     "validate_backlog_data",
     "validate_backlog_queue",
     "validate_beacon_data",
+    "validate_chilean_rut",
     "validate_dependency_dag",
     "validate_readmes",
     "validate_seed",
@@ -491,6 +629,8 @@
     "write_json"
   ],
   "signatures_1line": [
+    "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::validate_chilean_rut(rut_str: str) -> bool",
+    "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::format_chilean_rut(rut_str: str) -> Optional[str]",
     "./skills/v6/idir/scripts/run.py::matches_version(path) -> Any",
     "./src/core/context_runtime.py::read_json(path, default=None) -> Any",
     "./src/core/context_runtime.py::digest(value) -> Any",
@@ -557,6 +697,18 @@
     "./src/core/fwengine.py::audit_repository(root_path: Path, fix: bool=False) -> bool",
     "./src/core/fwengine.py::reconcile_repository(root_path: Path, check_only: bool=False) -> bool",
     "./src/core/fwengine.py::main() -> Any",
+    "./src/fabric/cli.py::run_fabric_cli(argv: List[str], repo_root: Path) -> int",
+    "./src/fabric/medallion.py::MedallionTier(class)",
+    "./src/fabric/medallion.py::read_fabric_platform_metadata(item_dir: Path) -> Dict[str, Any]",
+    "./src/fabric/medallion.py::detect_item_type(path: Path) -> Optional[str]",
+    "./src/fabric/medallion.py::classify_fabric_item(item_path: Path) -> Dict[str, Any]",
+    "./src/fabric/medallion.py::scan_workspace_items(root_dir: Path) -> List[Dict[str, Any]]",
+    "./src/fabric/remediator.py::remediate_pyspark_code(code: str) -> Tuple[str, List[str]]",
+    "./src/fabric/remediator.py::remediate_file(file_path: Path, dry_run: bool=False) -> Dict[str, Any]",
+    "./src/fabric/rules.py::audit_pyspark_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+    "./src/fabric/rules.py::audit_pipeline_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+    "./src/fabric/rules.py::audit_tmdl_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+    "./src/fabric/rules.py::audit_fabric_path(target_path: Path) -> List[Dict[str, Any]]",
     "./tests/test_fwengine.py::TestMiniYAML(class)",
     "./tests/test_fwengine.py::TestTopologicalManifest(class)",
     "./tests/test_fwengine.py::TestRoutingMapAndHeuristics(class)",
@@ -578,6 +730,6 @@
     "./tools/build_runtime.py::put(path, raw, check=False) -> Any",
     "./tools/build_runtime.py::build(check=False) -> Any"
   ],
-  "topology_hash": "caa0b80cc2e991b70ec1ac4e3485310dd1255bd17bd30cdefde3f68c2175a746",
+  "topology_hash": "4f58a65f28e45088a422188b2bb056a5ea7d5272f2b4b4ab3614cefbd25fd75c",
   "version": "6.0"
 }

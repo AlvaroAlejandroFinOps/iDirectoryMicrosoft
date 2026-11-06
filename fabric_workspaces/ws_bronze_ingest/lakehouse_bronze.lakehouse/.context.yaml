@@ -1,0 +1,12 @@
+version: 1.0
+directory: fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse
+role: bronze_ingestion
+purpose: Subdominio lakehouse_bronze.lakehouse bajo fabric_workspaces/ws_bronze_ingest/.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Hereda directivas de fabric_workspaces/ws_bronze_ingest/.

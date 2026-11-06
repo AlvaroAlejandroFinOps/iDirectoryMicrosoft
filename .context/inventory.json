@@ -9,6 +9,14 @@
         1793473614756678900
       ]
     },
+    ".agents/skills/fabric/SKILL.md": {
+      "sha256": "94a26206c2d900049bf3fae6bb25c71f211947530c3b725114ee6584da23120d",
+      "size": 4077,
+      "stat": [
+        4077,
+        1793966505976589400
+      ]
+    },
     ".agents/skills/idir/SKILL.md": {
       "sha256": "16b28743ba815dbdcac9618b413ca80f48d46821c01a8065440bf686e8f0c53e",
       "size": 492,
@@ -50,11 +58,11 @@
       ]
     },
     ".gitignore": {
-      "sha256": "3e21b9cd0c577d393947a3dd22f1037259d831b57d43b26bf843683a8c6b4084",
-      "size": 99,
+      "sha256": "62819c05dd761c65a15a66ba31fecbaac4f72ad85da18bd1bbfb61f1fbb4fe6c",
+      "size": 201,
       "stat": [
-        99,
-        1788297196178876900
+        201,
+        1793544365460800600
       ]
     },
     "01_seed/.context.yaml": {
@@ -62,55 +70,15 @@
       "size": 426,
       "stat": [
         426,
-        1793487749624235700
+        1793967284412320700
       ]
     },
     "01_seed/seed-idirectory-master.md": {
-      "sha256": "d56212fc3b50cb0b843a1ba70dfe9c632fe72a39af51c2ddb737895c02c2b677",
-      "size": 50559,
+      "sha256": "4e14bc147bf27b96932f99af603f9ff533ef30bb96b3e2685bd118848eed4e3d",
+      "size": 19703,
       "stat": [
-        50559,
-        1793485141132178900
-      ]
-    },
-    "02_foundation/.context.yaml": {
-      "sha256": "cfd1c484f512587df5c9ab164b2a25a0830e190d5d7f0a05081509e68c3ee753",
-      "size": 323,
-      "stat": [
-        323,
-        1792857422024973200
-      ]
-    },
-    "02_foundation/engine/.context.yaml": {
-      "sha256": "91d2b15b6ce915671565770cce1d0ea73fb39f540390bdfe9de79cef971ea59d",
-      "size": 404,
-      "stat": [
-        404,
-        1793487749627227800
-      ]
-    },
-    "02_foundation/engine/engine_readme.md": {
-      "sha256": "c1a717e22f5618371d52db5819d048a2666526f390d63c3a09a5d79b4d184424",
-      "size": 4500,
-      "stat": [
-        4500,
-        1792858696597250300
-      ]
-    },
-    "03_research/.context.yaml": {
-      "sha256": "cc8b8dd91bb6a57e1e4527f87dbd8cddf1186d1a1263d3ea070f9b2dde3736cc",
-      "size": 319,
-      "stat": [
-        319,
-        1792857422036935500
-      ]
-    },
-    "03_research/prompts/.context.yaml": {
-      "sha256": "db006f937bff731d5c030613c1f6b0f47f199d8c1b8a2af7fc56cc4cbdd17c65",
-      "size": 350,
-      "stat": [
-        350,
-        1793487749634388600
+        19703,
+        1793966506080577900
       ]
     },
     "AGENTS.md": {
@@ -169,21 +137,21 @@
       ]
     },
     "README.md": {
-      "semantic_sha256": "23708d46ca354d5039c53f9de0a91aa31e0b8768002eedf7c8f4f86ba521739d",
-      "sha256": "f8f6a5f96258f5e0496a99e82b7dfef0cfc88666461165a1d39aaa4de75a1f87",
-      "size": 26708,
+      "semantic_sha256": "a3e4386484eceb248d01ac5f38fbd5c7148d3d86e76e1fb9b9cfc7335f8a38f5",
+      "sha256": "2f0079f9a7741c11c35a829847713006f7a66225ecb9961af9fe233013d00e82",
+      "size": 14233,
       "stat": [
-        26708,
-        1793486214205534400
+        14233,
+        1793967085358090600
       ]
     },
     "README_ES.md": {
-      "semantic_sha256": "8eb0cb5fb4220174341cf8e7e723fef5ef1f7cc14dc615c51976a024f938425b",
-      "sha256": "8733796e8e24fb8e3973f116a00b142588b97d30186726ca7d415e4bd2045aae",
-      "size": 28088,
+      "semantic_sha256": "f7bced10f956d37473365574a919d53030357997643f0ca7124b830c16299b48",
+      "sha256": "c356217f27538960f9748a5e6242fe03dbfd830bc9f0a50dfd44044457ce0725",
+      "size": 14685,
       "stat": [
-        28088,
-        1793486214209524400
+        14685,
+        1793967085577709800
       ]
     },
     "artifacts/.context.yaml": {
@@ -295,7 +263,7 @@
       "size": 380,
       "stat": [
         380,
-        1793487749654295400
+        1793967284416309700
       ]
     },
     "artifacts/plans/active/plan_reingenieria_v4.md": {
@@ -327,7 +295,7 @@
       "size": 377,
       "stat": [
         377,
-        1793487749674548200
+        1793967284431802900
       ]
     },
     "config/context_policy.json": {
@@ -336,14 +304,6 @@
       "stat": [
         3072,
         1793477321772487600
-      ]
-    },
-    "data/.context.yaml": {
-      "sha256": "f170de83f63910ad25035a10f51158083b18d56381b9334cb04c96ba8e259615",
-      "size": 305,
-      "stat": [
-        305,
-        1792857422057879000
       ]
     },
     "docs/.context.yaml": {
@@ -359,7 +319,7 @@
       "size": 350,
       "stat": [
         350,
-        1793487749666417900
+        1793967284425820000
       ]
     },
     "docs/architecture/Directorio de carpetas.md": {
@@ -391,7 +351,7 @@
       "size": 351,
       "stat": [
         351,
-        1793487749671554900
+        1793967284429845500
       ]
     },
     "docs/specs/.context.yaml": {
@@ -399,7 +359,7 @@
       "size": 333,
       "stat": [
         333,
-        1793487749669409400
+        1793967284427814300
       ]
     },
     "docs/specs/icontext-v6.md": {
@@ -410,20 +370,260 @@
         1793477321775480300
       ]
     },
+    "fabric_workspaces/.context.yaml": {
+      "sha256": "2d6103c72b3a8ddd764b33d88052a5f6331b0ff61713e10238c7583a3aab5f80",
+      "size": 333,
+      "stat": [
+        333,
+        1793967085814230100
+      ]
+    },
+    "fabric_workspaces/ws_bi_semantic/.context.yaml": {
+      "sha256": "0a3d95719da5ee19a501229727b5fa0b3ce98516924d15499b687fde57d24960",
+      "size": 332,
+      "stat": [
+        332,
+        1793967085952111000
+      ]
+    },
+    "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report/.context.yaml": {
+      "sha256": "fc8c300874ac124f6261ca93b3a365cc2b8e3469df3ee121deaf9cd2837f6775",
+      "size": 417,
+      "stat": [
+        417,
+        1793965761197511200
+      ]
+    },
+    "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report/definition.pbir": {
+      "sha256": "21bb62cc573e649f74da09a97e1cc42b3bbb0ab61121e4b02634d1572cd89758",
+      "size": 153,
+      "stat": [
+        153,
+        1793966506958727300
+      ]
+    },
+    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/.context.yaml": {
+      "sha256": "a81abe357118636f49e6e3ed193272ff9ee7d518097ac9c786e9afd92fb8eeb3",
+      "size": 413,
+      "stat": [
+        413,
+        1793965761207684600
+      ]
+    },
+    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition.pbism": {
+      "sha256": "45d2c01722fad6762b18ff94949b486dad3bc1864329481de306fa7dffa820b2",
+      "size": 88,
+      "stat": [
+        88,
+        1793966507059198300
+      ]
+    },
+    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition/.context.yaml": {
+      "sha256": "cc5cf05803b8c30b22e8d4c3da3fed185a98d139b35c582b7898b3076de1d825",
+      "size": 468,
+      "stat": [
+        468,
+        1793965761218766700
+      ]
+    },
+    "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition/model.tmdl": {
+      "sha256": "3183a4057a90bd22345c7d9e126c18dc41e27129b2114b91977c9d49df232524",
+      "size": 418,
+      "stat": [
+        418,
+        1793966507127328300
+      ]
+    },
+    "fabric_workspaces/ws_bronze_ingest/.context.yaml": {
+      "sha256": "5f6e569af81dfb399bd59ab5d48d5369b752147166f763703cb543e1613bf134",
+      "size": 341,
+      "stat": [
+        341,
+        1793967086158515200
+      ]
+    },
+    "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse/.context.yaml": {
+      "sha256": "5c6aeacd074ef23c458fa4b38a399b15b92932663cc44986b60c4baddefe99bf",
+      "size": 412,
+      "stat": [
+        412,
+        1793965761224374100
+      ]
+    },
+    "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline/.context.yaml": {
+      "sha256": "4c372e5cb66388c07110a4532bfb753370f418920ed701afc81d68548dcb5635",
+      "size": 420,
+      "stat": [
+        420,
+        1793965761236189800
+      ]
+    },
+    "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline/pipeline-content.json": {
+      "sha256": "3e1127ef0812968a69924f8bb6b7964db9d85798e305cad859c4f0a8b35fcf19",
+      "size": 655,
+      "stat": [
+        655,
+        1793966507582259700
+      ]
+    },
+    "fabric_workspaces/ws_core_governance/.context.yaml": {
+      "sha256": "48b1ddc241eabdd6a7aa3b9ea7bce86933c40efa78fc3235f002430085526dfd",
+      "size": 344,
+      "stat": [
+        344,
+        1793967086349800100
+      ]
+    },
+    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/.context.yaml": {
+      "sha256": "a575eda953e5412c91309275e08ceb1a679442c8e024d3cc60b862d552449f1f",
+      "size": 425,
+      "stat": [
+        425,
+        1793965761245263100
+      ]
+    },
+    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/.context.yaml": {
+      "sha256": "8fac2e92397780a84e3aaa03334e0f38c567090f18ea6b33bd18e5075cb77dc0",
+      "size": 472,
+      "stat": [
+        472,
+        1793965761255617700
+      ]
+    },
+    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/spark/.context.yaml": {
+      "sha256": "ad02d3db6525a8eb72c4322363b9e17907d8997d667175d4cdad7192c3f9c216",
+      "size": 492,
+      "stat": [
+        492,
+        1793965761268210600
+      ]
+    },
+    "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/spark/compute.json": {
+      "sha256": "e8884e5a1dff14f582eec7979218b9281ec3787436e7bcbfc1d7f2bec24bc4bc",
+      "size": 501,
+      "stat": [
+        501,
+        1793966507825362500
+      ]
+    },
+    "fabric_workspaces/ws_core_governance/libraries/.context.yaml": {
+      "sha256": "c3516a913f188222356aeb992759b059787ba67c01d57e3b578f4da70b286cda",
+      "size": 383,
+      "stat": [
+        383,
+        1793965761255617700
+      ]
+    },
+    "fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "re",
+          "typing"
+        ],
+        "signatures": [
+          "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::validate_chilean_rut(rut_str: str) -> bool",
+          "./fabric_workspaces/ws_core_governance/libraries/santolaya_chile_utils.py::format_chilean_rut(rut_str: str) -> Optional[str]"
+        ],
+        "symbols": [
+          "validate_chilean_rut",
+          "format_chilean_rut"
+        ]
+      },
+      "sha256": "6c44523ff5a1d853032f53d1e20b4b1299fc2d73a9da7cff1abe1c80e820034f",
+      "size": 1505,
+      "stat": [
+        1505,
+        1793967086511192500
+      ]
+    },
+    "fabric_workspaces/ws_gold_analytics/.context.yaml": {
+      "sha256": "a61aed78e1cd86ed309de0382d60df4cdb097573f4a9cdeaeebde20f7887718e",
+      "size": 343,
+      "stat": [
+        343,
+        1793967086693771100
+      ]
+    },
+    "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook/.context.yaml": {
+      "sha256": "be0cb7c9e0f63832a9ced50e4243c4bf1ef0c51953c685d5745ab5fd8c143fcf",
+      "size": 425,
+      "stat": [
+        425,
+        1793965761276776600
+      ]
+    },
+    "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook/notebook-content.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "pyspark.sql"
+        ],
+        "signatures": [],
+        "symbols": []
+      },
+      "sha256": "eefea0fabbed2e65a63893f2af93e0c8a196db0579f807090bdd5b09b47d5384",
+      "size": 1583,
+      "stat": [
+        1583,
+        1793966509077015600
+      ]
+    },
+    "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse/.context.yaml": {
+      "sha256": "a7c715a155b4a5a62cf2c7c3262595c0651f8228a82eeb3130ba66bce3408941",
+      "size": 417,
+      "stat": [
+        417,
+        1793965761286963900
+      ]
+    },
+    "fabric_workspaces/ws_silver_transform/.context.yaml": {
+      "sha256": "0c2be0b5ec30cfb106859f6662dcdd1d6ed198e6fa0a220a2b00231bfabea432",
+      "size": 346,
+      "stat": [
+        346,
+        1793967086973119300
+      ]
+    },
+    "fabric_workspaces/ws_silver_transform/lakehouse_silver.lakehouse/.context.yaml": {
+      "sha256": "ff8c16234bfdad1e9b5147b45919e387cf2d06b5076c12f3701c23cf35823c19",
+      "size": 420,
+      "stat": [
+        420,
+        1793965761297542900
+      ]
+    },
+    "fabric_workspaces/ws_silver_transform/nb_curate_costos_obra.notebook/.context.yaml": {
+      "sha256": "b910f9900d3ff8a0bf05fd69b3a8fe0791c1a56feed330352164ab23318fd37c",
+      "size": 428,
+      "stat": [
+        428,
+        1793965761301535400
+      ]
+    },
+    "fabric_workspaces/ws_silver_transform/nb_curate_costos_obra.notebook/notebook-content.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "pyspark.sql",
+          "pyspark.sql.types"
+        ],
+        "signatures": [],
+        "symbols": []
+      },
+      "sha256": "d4efc97e6e641c9ab673c9e0a863e0868fc715ab79369861efdee63a2b1482fe",
+      "size": 1608,
+      "stat": [
+        1608,
+        1793966509424684900
+      ]
+    },
     "iDirectory.png": {
       "sha256": "beae24f2dfa90a22790a775a7956f1136ba42d7aee5cd5c7b7b3652e3d712d4b",
       "size": 1852810,
       "stat": [
         1852810,
         1789696233746600300
-      ]
-    },
-    "infrastructure/.context.yaml": {
-      "sha256": "bbde7d0687a00834aceeb18ae5cc5d4bb19b50468444914bf5e3aefb10bef8c1",
-      "size": 315,
-      "stat": [
-        315,
-        1792857422079820800
       ]
     },
     "pyproject.toml": {
@@ -439,7 +639,7 @@
       "size": 368,
       "stat": [
         368,
-        1793487749686685700
+        1793967284434795600
       ]
     },
     "schemas/backlog.schema.json": {
@@ -519,7 +719,7 @@
       "size": 318,
       "stat": [
         318,
-        1793487749689679600
+        1793967284437886400
       ]
     },
     "scripts/generate_benchmark_reports.py": {
@@ -553,6 +753,30 @@
       "stat": [
         280,
         1793474278537982900
+      ]
+    },
+    "skills/v6/fabric/.context.yaml": {
+      "sha256": "4a25b7490a0b48e1a080bfa91e66bb6122336ba2916b2ad5e6bcfdb8bf88d811",
+      "size": 293,
+      "stat": [
+        293,
+        1793967087300501400
+      ]
+    },
+    "skills/v6/fabric/SKILL.md": {
+      "sha256": "186dcab0ed0f91c939d6abddff54f9804b37bef6206bcda78e11141ef13d7012",
+      "size": 505,
+      "stat": [
+        505,
+        1793966509649548000
+      ]
+    },
+    "skills/v6/fabric/bundle.json": {
+      "sha256": "e6616ae770b1076709f896ee0d9162c815d65eaf6fe9df665885fed83cbdae85",
+      "size": 107,
+      "stat": [
+        107,
+        1793966509830837700
       ]
     },
     "skills/v6/idir/.context.yaml": {
@@ -618,20 +842,12 @@
         1792857422088798500
       ]
     },
-    "src/cloud_jobs/.context.yaml": {
-      "sha256": "4ad406c4285681ea3f0adba530641023ee7c7cfb874ba50e267304332a51db9f",
-      "size": 437,
-      "stat": [
-        437,
-        1793487749640704900
-      ]
-    },
     "src/core/.context.yaml": {
       "sha256": "1fcfcc1e5c260a147e9e3231be5abce1db8777adef0261602bee1cf5d3d57afd",
       "size": 335,
       "stat": [
         335,
-        1793487749646688400
+        1793967284414314900
       ]
     },
     "src/core/context_runtime.py": {
@@ -714,6 +930,7 @@
           "--capsule",
           "--check",
           "--check-freshness",
+          "--classify",
           "--clear",
           "--compact",
           "--constraint",
@@ -734,6 +951,7 @@
           "--phase",
           "--plan-id",
           "--radius",
+          "--remediate",
           "--resolve",
           "--section",
           "--session-id",
@@ -761,6 +979,7 @@
           "pathlib",
           "random",
           "re",
+          "src.fabric.cli",
           "stat",
           "sys",
           "threading",
@@ -865,27 +1084,146 @@
           "main"
         ]
       },
-      "sha256": "42486dc09826545c7dada364ee4dfaa3a772e628f11f5a2eff8fcc44c51eccd4",
-      "size": 161279,
+      "sha256": "ea6c949eee311d40a3664795cb0cb69364f767c9007bb8e2a161ae6246af582e",
+      "size": 162511,
       "stat": [
-        161279,
-        1793484930052161800
+        162511,
+        1793967258967523400
       ]
     },
-    "src/dashboards/.context.yaml": {
-      "sha256": "f1af8cc10c1da0362b606197a9f752e0c1885f919e83f685fbbd46db13a690d8",
-      "size": 351,
+    "src/fabric/.context.yaml": {
+      "sha256": "dc3cb3b35bafe2a7b2c43b00620679e14bf9d6e939680b3189ecb192f953f11b",
+      "size": 274,
       "stat": [
-        351,
-        1793487749650678600
+        274,
+        1793965761308109300
       ]
     },
-    "src/data_generation/.context.yaml": {
-      "sha256": "8354c5ab27f0146ca433a0fad16fa9ac32a505b9db186dbedac4c53540a5f7a5",
-      "size": 365,
+    "src/fabric/__init__.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "medallion",
+          "remediator",
+          "rules"
+        ],
+        "signatures": [],
+        "symbols": []
+      },
+      "sha256": "fd8da1a07fd51673cc2f21617f0f1a416b5a3867a5b2fe6cc5c04db0b953044b",
+      "size": 541,
       "stat": [
-        365,
-        1793487749643697900
+        541,
+        1793966510238314700
+      ]
+    },
+    "src/fabric/cli.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "medallion",
+          "pathlib",
+          "remediator",
+          "rules",
+          "sys",
+          "typing"
+        ],
+        "signatures": [
+          "./src/fabric/cli.py::run_fabric_cli(argv: List[str], repo_root: Path) -> int"
+        ],
+        "symbols": [
+          "run_fabric_cli"
+        ]
+      },
+      "sha256": "f892f97349c8a0256066cb953e7ef20b0b6dd06d7ff4da39b79f49872456cfbe",
+      "size": 4351,
+      "stat": [
+        4351,
+        1793967087771135700
+      ]
+    },
+    "src/fabric/medallion.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "enum",
+          "json",
+          "pathlib",
+          "typing"
+        ],
+        "signatures": [
+          "./src/fabric/medallion.py::MedallionTier(class)",
+          "./src/fabric/medallion.py::read_fabric_platform_metadata(item_dir: Path) -> Dict[str, Any]",
+          "./src/fabric/medallion.py::detect_item_type(path: Path) -> Optional[str]",
+          "./src/fabric/medallion.py::classify_fabric_item(item_path: Path) -> Dict[str, Any]",
+          "./src/fabric/medallion.py::scan_workspace_items(root_dir: Path) -> List[Dict[str, Any]]"
+        ],
+        "symbols": [
+          "MedallionTier",
+          "read_fabric_platform_metadata",
+          "detect_item_type",
+          "classify_fabric_item",
+          "scan_workspace_items"
+        ]
+      },
+      "sha256": "126919b43b0b53bf9652a1a317fa8ea0bfc27d49937d03ae1b9db05d3026efdd",
+      "size": 8724,
+      "stat": [
+        8724,
+        1793966511168897200
+      ]
+    },
+    "src/fabric/remediator.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "pathlib",
+          "re",
+          "typing"
+        ],
+        "signatures": [
+          "./src/fabric/remediator.py::remediate_pyspark_code(code: str) -> Tuple[str, List[str]]",
+          "./src/fabric/remediator.py::remediate_file(file_path: Path, dry_run: bool=False) -> Dict[str, Any]"
+        ],
+        "symbols": [
+          "remediate_pyspark_code",
+          "remediate_file"
+        ]
+      },
+      "sha256": "de5c432137d789473e63356443bab5056b8357f5600479a9621e068448df7a41",
+      "size": 3020,
+      "stat": [
+        3020,
+        1793966511362539200
+      ]
+    },
+    "src/fabric/rules.py": {
+      "contracts": {
+        "cli_flags": [],
+        "imports": [
+          "json",
+          "pathlib",
+          "re",
+          "typing"
+        ],
+        "signatures": [
+          "./src/fabric/rules.py::audit_pyspark_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+          "./src/fabric/rules.py::audit_pipeline_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+          "./src/fabric/rules.py::audit_tmdl_content(content: str, file_path: str) -> List[Dict[str, Any]]",
+          "./src/fabric/rules.py::audit_fabric_path(target_path: Path) -> List[Dict[str, Any]]"
+        ],
+        "symbols": [
+          "audit_pyspark_content",
+          "audit_pipeline_content",
+          "audit_tmdl_content",
+          "audit_fabric_path"
+        ]
+      },
+      "sha256": "a63a6fed8b54db5d598cc18636467f2d023dfba54d0f78a3b9f148da7b2a7ae9",
+      "size": 9127,
+      "stat": [
+        9127,
+        1793967087934371600
       ]
     },
     "tests/.context.yaml": {
@@ -893,7 +1231,7 @@
       "size": 318,
       "stat": [
         318,
-        1793487749692823300
+        1793967284439881900
       ]
     },
     "tests/test_fwengine.py": {
@@ -989,7 +1327,7 @@
       "size": 288,
       "stat": [
         288,
-        1793487749695814000
+        1793967284441875900
       ]
     },
     "tools/build_runtime.py": {
@@ -1022,7 +1360,7 @@
       ]
     }
   },
-  "inputs_hash": "9dbc74eab9d5ac783effcd2b6be9e71a981b1172ecaacc0c83b0ba65fa40e76f",
-  "policy_hash": "ec95ee2ea2ba2dcd77dfa945edf7ff1c8aa8d54547fddeb71c2253c855e2d1b3",
+  "inputs_hash": "ef37dec4c2944d21c36fd66ffb49d920eca13a75e19a6068356f256ae1e6d4c7",
+  "policy_hash": "607d08c9f22e65dd3327aaf3e0fcc576963ef0bbc70db91b9433f25897a7675e",
   "version": "6.0.0"
 }

@@ -1,0 +1,12 @@
+version: 1.0
+directory: fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting
+role: core_governance
+purpose: Subdominio setting bajo fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/.
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+inherited: true
+token_density: sparse
+instructions: Hereda directivas de fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/.

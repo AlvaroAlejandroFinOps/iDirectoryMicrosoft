@@ -1,0 +1,8 @@
+{
+  "version": "6.0.0",
+  "name": "fabric",
+  "files": {
+    "SKILL.md": "fabric_v6_skill_manifest"
+  }
+}
+

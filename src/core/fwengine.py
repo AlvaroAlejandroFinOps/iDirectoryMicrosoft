@@ -1490,17 +1490,27 @@ def compute_node_fingerprint(dir_path: Path) -> str:
 
 
 OPTIONAL_SKELETON_IF_PACKAGED: Set[str] = {
+    "02_foundation/engine",
+    "03_research/notebooks",
+    "03_research/prompts",
+    "03_research/experiments",
     "src/cloud_jobs",
     "src/core",
     "src/dashboards",
     "src/data_generation",
     "tools",
+    "data/raw",
+    "data/processed",
     "data/sandbox",
+    "logs",
+    "infrastructure",
 }
 
 
 def _is_custom_src_package_repo(root: Path) -> bool:
-    """Detecta si el repositorio es un paquete Python con pyproject.toml y src/<pkg> propio."""
+    """Detecta si el repositorio es un paquete Python con pyproject.toml y src/<pkg> propio o workspace Fabric."""
+    if (root / "fabric_workspaces").is_dir():
+        return True
     if not (root / "pyproject.toml").is_file():
         return False
     src_dir = root / "src"
@@ -1528,9 +1538,9 @@ def generate_tree_json(root_path: Path) -> Dict[str, Any]:
         "$schema": "../schemas/tree.schema.json",
         "version": "6.0",
         "project": root.name,
-        "architecture": "Gravity HyperScale Thinking",
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-        "timestamp": now_ts,
+        "architecture": "HyperScale Thinking",
+        "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "timestamp": int(now_ts),
         "topology_hash": topo_hash,
         "bootloader": {
             "tier_1": [
@@ -1579,8 +1589,8 @@ def generate_tree_json(root_path: Path) -> Dict[str, Any]:
             node_info["seed_ref"] = "required"
         if not exists_on_disk:
             node_info["exists"] = False
-        if "tier1_preload" in meta:
-            node_info["tier1_preload"] = meta["tier1_preload"]
+        if meta.get("tier1_preload") is True:
+            node_info["tier1_preload"] = True
         if folder == "01_seed":
             node_info["key_files"] = seed_files
         elif local_beacon.get("key_files"):
@@ -1754,15 +1764,15 @@ def format_compact_tree_json(data: Dict[str, Any]) -> str:
     lines: List[str] = ["{"]
     top_keys = [k for k in data.keys() if k != "nodes"]
     for k in top_keys:
-        val_str = json.dumps(data[k], ensure_ascii=False, separators=(",", ": "))
-        lines.append(f'  "{k}": {val_str},')
-    lines.append('  "nodes": {')
+        val_str = json.dumps(data[k], ensure_ascii=False, separators=(",", ":"))
+        lines.append(f'"{k}":{val_str},')
+    lines.append('"nodes":{')
     node_items = list(data.get("nodes", {}).items())
     for idx, (node_key, node_val) in enumerate(node_items):
         comma = "," if idx < len(node_items) - 1 else ""
         compact_node = json.dumps(node_val, ensure_ascii=False, separators=(",", ":"))
-        lines.append(f'  {json.dumps(node_key, ensure_ascii=False)}:{compact_node}{comma}')
-    lines.append("  }")
+        lines.append(f'{json.dumps(node_key, ensure_ascii=False)}:{compact_node}{comma}')
+    lines.append("}")
     lines.append("}")
     return "\n".join(lines) + "\n"
 
@@ -3425,6 +3435,13 @@ def main():
     reconcile_parser.add_argument("--check", action="store_true", help="Verifica en modo lectura sin modificar archivos")
     reconcile_parser.add_argument("--base", "--target", dest="base", default=".", help="Directorio base a reconciliar")
 
+    # fabric
+    fabric_parser = subparsers.add_parser("fabric", help="Gobernanza, optimización y remediación para Microsoft Fabric F8")
+    fabric_parser.add_argument("--audit", action="store_true", help="Audita código PySpark/Pipelines/TMDL")
+    fabric_parser.add_argument("--classify", action="store_true", help="Clasifica artefactos Fabric en capas Medallón")
+    fabric_parser.add_argument("--remediate", action="store_true", help="Aplica parches automáticos F8 a notebooks")
+    fabric_parser.add_argument("path", nargs="?", default=".", help="Ruta objetivo")
+
     args = parser.parse_args()
     root = Path(getattr(args, "base", getattr(args, "path", ".")))
 
@@ -3546,6 +3563,15 @@ def main():
     elif args.command == "reconcile":
         ok = reconcile_repository(root, check_only=getattr(args, "check", False))
         sys.exit(0 if ok else 1)
+    elif args.command == "fabric":
+        target = Path(getattr(args, "path", ".")).resolve()
+        try:
+            from src.fabric.cli import run_fabric_cli
+            code = run_fabric_cli(sys.argv[2:], target)
+            sys.exit(code)
+        except Exception as e:
+            print(f"[!] Error ejecutando módulo Fabric: {e}")
+            sys.exit(1)
     else:
         parser.print_help()
 
