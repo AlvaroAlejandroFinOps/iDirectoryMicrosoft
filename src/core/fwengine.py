@@ -203,7 +203,7 @@ DEFAULT_CONTEXT_POLICY: Dict[str, Any] = {
         "2. Canonical policy (config/context_policy.json)",
         "3. Verified satellite (.context/tree.json) & local beacons (.context.yaml)",
         "4. Active attentional checkpoint (.context/checkpoint.json)",
-        "5. Architectural DNA (01_seed/seed-idirectory-master.md)",
+        "5. Architectural DNA (01_seed/seed-idirectoryfabric-master.md)",
         "6. Active plans with status=approved|executing (artifacts/plans/active/)"
     ],
     "supported_adapters": [

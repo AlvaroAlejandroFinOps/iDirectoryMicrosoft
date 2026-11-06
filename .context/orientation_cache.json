@@ -3,7 +3,7 @@
     ".": {
       "beacon_chain_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "beacon_hash": "29e02afbcbc4a62b3d955593f853063b09bd47dfaac65d45221ae9ff2f1be606",
-      "fingerprint": "3a3f25fc64dc66f36ac4f6f46771a176589c44ba9850cb1dad73fcab9274d5ed",
+      "fingerprint": "4a90b7fa733878e782d4a97c56bfd28975c9862e88f70e87f58be04ec89e9b90",
       "pack": {
         "crawl": true,
         "edges": {
@@ -30,14 +30,14 @@
       }
     },
     "01_seed": {
-      "beacon_chain_hash": "e726266e3bc4a9b52954eee1eef7621667093ec3726c86416ea3fe881bd12f94",
-      "beacon_hash": "996d840903829140e283d9ce4bc4177aefc2a00b7bc12d9c125cf3f2d9dd2362",
-      "fingerprint": "30a4264fc0914216da5b9f4f7ac88ce6e9ba9aee87594b6918b26bd1644a39e1",
+      "beacon_chain_hash": "ec61a73b6874c677ed728706fd64cb5627d87201654606a1181f709f9888cc24",
+      "beacon_hash": "83363c99d5a121e08939d2b005ecac33760c5c1f9b1af3d88f71ff9ea2f5bd3d",
+      "fingerprint": "d0bca2abdd1dcff58534989a919b2387d147b2e11f479ae3b48129c817516241",
       "pack": {
         "crawl": true,
         "edges": {},
         "files": [
-          "seed-idirectory-master.md(~4925t)"
+          "seed-idirectoryfabric-master.md(~4367t)"
         ],
         "focus": "01_seed",
         "idir_pack": "6.0",
@@ -51,7 +51,7 @@
     "artifacts": {
       "beacon_chain_hash": "b712c56187912ad28dacd707ae67e524e750a5866005351bbbe22f521c0815fd",
       "beacon_hash": "1c27fb78f03b685610c9fbd91504da3b1fccaf5ac011d9f89fb8c94cc3f69da0",
-      "fingerprint": "d572353ca1838c805934f256359e3e76a438d2e61bcd0fc78436b685162d0117",
+      "fingerprint": "8b743ff06d968a03f907cc503ac44bd15d4eb3499d7d6b7f0e165fb14c540140",
       "pack": {
         "crawl": true,
         "edges": {
@@ -73,7 +73,7 @@
     "artifacts/benchmarks": {
       "beacon_chain_hash": "0cf18853dd49dabd25eb12cb6e8df346019268695240bec652677884a9a0b02f",
       "beacon_hash": "8fc836fa63cd66ae150a82563e54573a59c75b95859227d23c32ccff11cbd874",
-      "fingerprint": "bd38b34afc95ed5a1e2af18020d8a79fef59072d6926a55d006ec2d7e1aeaee3",
+      "fingerprint": "d642d2551172de8ba69115403025a2a5c3923387d349f5b07b04ce92283192ed",
       "pack": {
         "crawl": true,
         "edges": {
@@ -100,7 +100,7 @@
     "artifacts/plans": {
       "beacon_chain_hash": "fb18840ae8ee15ffde0d43ac1efea6f29106582bf1a9a4700b8fec12d4793a1b",
       "beacon_hash": "8a8cff52812648899a01af9da32f84f7f3ac49645ba7e729092b8dd2e1881f4a",
-      "fingerprint": "fc2e5f2edb0b180292e107548963da9d9fe7cf8ad061d1b7f0ce0ba9250db1dc",
+      "fingerprint": "a33cf468de0ae5ef3c1c1f8f28f07dae581366bc34cf5d56c03a265e691198db",
       "pack": {
         "crawl": true,
         "edges": {
@@ -123,7 +123,7 @@
     "artifacts/plans/active": {
       "beacon_chain_hash": "dd279d09e43cc951ce084df2699ddb024f66d074ab393684261ae581fd303bd8",
       "beacon_hash": "4099ccf8eeb2b31acd32ca9fe98dc35988cc70c149825027948b31a8bf8406f4",
-      "fingerprint": "45664951214d5910217bfdbd10dc292e86f02afce88f19fa674ac6b281e522c7",
+      "fingerprint": "e1f6bd6491bc7d9c0d0145c0baadceac799c66769f8525767e61ff1da082aafb",
       "pack": {
         "crawl": true,
         "edges": {
@@ -145,7 +145,7 @@
     "artifacts/plans/openia": {
       "beacon_chain_hash": "f5dafb5a41544eee8aa8cc8237028e786ad7310397c05c457db419258fb66346",
       "beacon_hash": "657ab6156bcab1982842f9c849e72c718281272645036b04bd4ea9bf2c22509c",
-      "fingerprint": "f41649213eeebc101f0b66514c2c462fc441ce4ea315c6841afb5fcc40b8a182",
+      "fingerprint": "af29b7e6ca205b3f93f89e18334fd6dca8dc78d3cafc1c40e51a025fa1b0b0a3",
       "pack": {
         "crawl": true,
         "edges": {
@@ -167,12 +167,12 @@
     "config": {
       "beacon_chain_hash": "ceabe8ac96ad505fb82d97ea542c4c35d50a4c572bfb507ff2e33e6e3f23bf32",
       "beacon_hash": "6c2651b95e2d4b9daa0c4c6ed9fc950355fafa09491a7f72fd7351e29a0684e9",
-      "fingerprint": "15238991f8dc89ab9c0c4c9139cfe84a5d822bef8a1bd5109fa3cd555d236f1e",
+      "fingerprint": "7d9e10a1066a5dd5242cc28ef7a9edbe72458d1b0fa5551dee53b32bd42f209f",
       "pack": {
         "crawl": true,
         "edges": {},
         "files": [
-          "context_policy.json(~853t)"
+          "context_policy.json(~855t)"
         ],
         "focus": "config",
         "idir_pack": "6.0",
@@ -186,7 +186,7 @@
     "docs": {
       "beacon_chain_hash": "6317216f276a6094b4ff7e3c8b984c330768ed6f05a9bda7d4e8c08100c348db",
       "beacon_hash": "4e29d13909f0f78ed4a7526ed4c6f9064abb3ccd6ee4c8467a4badc3cd3209b4",
-      "fingerprint": "ea86a0ad38916a8d0908730e622d980fda395b0b2b60094c11a26dd1b0194cd1",
+      "fingerprint": "8d76c294101c822b53d51b42b8ff8e7f2e21c60542ef964f9a700d865236a8e6",
       "pack": {
         "crawl": true,
         "edges": {
@@ -207,7 +207,7 @@
     "docs/architecture": {
       "beacon_chain_hash": "616f5eb96b14d0fc27bea2ab6157774c828cbf28ac8c0e70c759b157c100b181",
       "beacon_hash": "579ac3a434b5f233b8ab64811f475dcc1275ed6df7c60a959dc7dcd62e8e8d90",
-      "fingerprint": "88920ad13a4a18007699bc2dd27d03a951580e52555d01d6946f27d1dedc24d0",
+      "fingerprint": "a4f93bfe7a7e35b147dba10d2e384833169ef6f602b70ca1bb1b658a4b5b176a",
       "pack": {
         "crawl": true,
         "edges": {
@@ -231,7 +231,7 @@
     "docs/notes": {
       "beacon_chain_hash": "8e769560aea5a62afcb49a4fafe7dc902f7f02986513674c34c1797d5983f024",
       "beacon_hash": "0f908d7156270d3f06214795029bafbef351231876d83e1341f0d353fbb1f704",
-      "fingerprint": "d1cf5318333b28238f0994de15f31f4c746cfce5cf4b5899a2bec313cd67160a",
+      "fingerprint": "cadc79af78f4b5e0539a46db1c0baa0c8c81c46f7f9828988e2a4f019cd38a26",
       "pack": {
         "crawl": true,
         "edges": {
@@ -251,7 +251,7 @@
     "docs/specs": {
       "beacon_chain_hash": "4ff20867668ab6e5924242804fe4cc1e878c0402a169ae0b2338e25a00b95c6a",
       "beacon_hash": "d399e0fc46ebb7ba355d1446f1807e77fd98f1e6837057a5c0ea09116293f465",
-      "fingerprint": "5530a1a63d6508996128233b5c7881a239b061a671d80ab0bbaace15e1936e89",
+      "fingerprint": "6111addb162cb50d5bbd635efd54982544960708eaebe08a3ed18a421b66eeb5",
       "pack": {
         "crawl": true,
         "edges": {
@@ -276,7 +276,7 @@
     "fabric_workspaces": {
       "beacon_chain_hash": "39e9afbc351eac05b475abf6f10000e8d4054fb8cad801436cbd464e9edeea89",
       "beacon_hash": "7789f3fccf38c69a17d90b73af879c08349fad408f6b41c550668989e8eeb704",
-      "fingerprint": "afb50d158fc580f6a173428a20aa34cd97b2ef164fe15fb0ee06710050e1fd5d",
+      "fingerprint": "df6060a2d705de20d21a24acc06e68b396ac2f0a4ef61ee01fb6883073544c83",
       "pack": {
         "crawl": true,
         "edges": {
@@ -297,7 +297,7 @@
     "fabric_workspaces/ws_bi_semantic": {
       "beacon_chain_hash": "9d8e0fe1e907b261542d289a57e4e5d934f72bdcc72bea8cea97bf731a55e9f4",
       "beacon_hash": "defa0ceda68e9b6203c8ba6c9ab61cafe4d6def2b53c3dc4bba5f347de7cd86f",
-      "fingerprint": "750f82ed45bc531f973c89037c9f3043124a95b43f15290d001384dc94d41eb8",
+      "fingerprint": "6cd6b6d953e75f8d26a9d2fbd0b55e00f5785c834f5fae104e2a24f63bc40933",
       "pack": {
         "crawl": true,
         "edges": {
@@ -319,7 +319,7 @@
     "fabric_workspaces/ws_bi_semantic/rpt_control_obras_ejecutivo.report": {
       "beacon_chain_hash": "99c5b7603da125d89bb8a20fed454a5ac8cfccb050f18ee07f99af87ac6b7604",
       "beacon_hash": "df99edbb7be343d6312f8efb962ad9a874e7e74df9e0dbd3388ed37d04c8d690",
-      "fingerprint": "23dadfb737237a797b24e8a12dd10ad892078347dd4beae560ad420f0261ff1c",
+      "fingerprint": "3bf4b2ff3c4d13cb0e1f3551c93b36ab3f328e2161c906212a25bfbf7963580d",
       "pack": {
         "crawl": true,
         "edges": {
@@ -341,7 +341,7 @@
     "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel": {
       "beacon_chain_hash": "d21fee6ee5b536e8bea55018d480d572e6a5c6b72b0e1407a5d8540a4d0967c9",
       "beacon_hash": "9018585b34c07b72491b996f042661d6003c5e9d7261c158e3bc9842a1584506",
-      "fingerprint": "9dd23d75e9ad13d4bda5a705b9e4925481549a085fd175938ea3425519f4d944",
+      "fingerprint": "d08b064bcb72949153aa62ba5e3b9f55ed319ca2cc810a14d39749fd25d44c42",
       "pack": {
         "crawl": true,
         "edges": {
@@ -364,7 +364,7 @@
     "fabric_workspaces/ws_bi_semantic/sm_santolaya_obras.semanticmodel/definition": {
       "beacon_chain_hash": "c9c9679f190fad8f0b29812a4cc6eaa10713067322773959fc1a341dff0b5650",
       "beacon_hash": "d3ca5bba969e9d3ce1b2e6c128b3c12ce7bd4c7b1320af6988be7d36888d9285",
-      "fingerprint": "3c8c3cc2c46e88cbdbb61a49dccedae0e88ba62a90213b7d307b36f07a6309b7",
+      "fingerprint": "87034de169725bb6a01909ed6200a3666122ea9fca67da3804e3ee21f6dd09ee",
       "pack": {
         "crawl": true,
         "edges": {
@@ -386,7 +386,7 @@
     "fabric_workspaces/ws_bronze_ingest": {
       "beacon_chain_hash": "cb1e2ae88fb89e134736bf8acd43fa1df4534c5f91dec139d098d6ddbdbd6409",
       "beacon_hash": "ec79595644ed1fc7402e7d819dcca55335bdcb9402e9aff96a4bd12180bbcf2d",
-      "fingerprint": "05cf34dc5a3e4388455bc088d20de828cc88d0b50af2437e7e72700a1175b579",
+      "fingerprint": "71880952c1225cee0349ab045851cf805d826641a087808138683e0c696849f5",
       "pack": {
         "crawl": true,
         "edges": {
@@ -408,7 +408,7 @@
     "fabric_workspaces/ws_bronze_ingest/lakehouse_bronze.lakehouse": {
       "beacon_chain_hash": "6117956fea3b7e00698ab951810eced69f847dc5dcdef00d8621666b09dcc8ee",
       "beacon_hash": "ebe14556cf4a7af2e63cac926e2b64f73229b16243adf264f967ee65c04cc6e3",
-      "fingerprint": "17e5b50e493a12155b9991e62da0f04af1f3efc4984b583d2cdfdd32a9bbde29",
+      "fingerprint": "1dc7bd769d7133292df903f87cd10729a4612d4005e3a6b2a051a2302dcad934",
       "pack": {
         "crawl": true,
         "edges": {
@@ -428,7 +428,7 @@
     "fabric_workspaces/ws_bronze_ingest/pl_ingest_general.datapipeline": {
       "beacon_chain_hash": "64b90703ffb40ac4163e777c9eeacd16fd751f1ab756c4ff518d2a4ef7f6d246",
       "beacon_hash": "fb4850c29b9ed1bb3b581eb02ec48677dba04e334ab1d135b004d68a0a853535",
-      "fingerprint": "f5a5a899c2c4218d9df9444c36324afcb6ccba3e8ea78341da8f2b7f58c6cc4e",
+      "fingerprint": "42dc887a0d8652a6344946ea6d29730b3f9816e9784e57a5b366b59fe38a4602",
       "pack": {
         "crawl": true,
         "edges": {
@@ -450,7 +450,7 @@
     "fabric_workspaces/ws_core_governance": {
       "beacon_chain_hash": "5b23cc044990715dff379c0e5ed200c46763834e63a869136e7db2a5b0be24c2",
       "beacon_hash": "8a27c424eea1d7bfb0a02049fdbf6686fba0b4d1cc4b8e9fd7d9a9717374be73",
-      "fingerprint": "b4fcc5feb1ee8029205a390b7d82da67f5dcf5a8783e4921047cd5ed9a96d18f",
+      "fingerprint": "4e70574c89be1a5928bcbacb6bae3b6f785710901770ea3f53b562b358423f7b",
       "pack": {
         "crawl": true,
         "edges": {
@@ -472,7 +472,7 @@
     "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment": {
       "beacon_chain_hash": "9c54e5ebb02a86321cbdf1c4a0d5b095da0e8ae38058232fd3dd3ebe2f1ae01b",
       "beacon_hash": "993ea90a98b3cfdba1020649d68a1ea8709fa83b78ff5e20cd09736c567fc20e",
-      "fingerprint": "38ee6e64531e9245a433e9a8b6f19ab48787e310ae180dd70c2955cd0f4f2701",
+      "fingerprint": "296d3a8bd6e66e0122d5638adb1485f1d3f5ea85180f64ca3e05792458ccf56b",
       "pack": {
         "crawl": true,
         "edges": {
@@ -493,7 +493,7 @@
     "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting": {
       "beacon_chain_hash": "4213c6ace82f1f8dcd4f488428fab10af863ca229034a95dbde76277dd73f28f",
       "beacon_hash": "c6c5bb764723c3dcfa06c18b4bf8d01cbe3a76678b334da5c8f5a6f3fef5c335",
-      "fingerprint": "99eb4745df457d8a800b3ece5a093f515677f0d4b83a154227ac292805a25fbd",
+      "fingerprint": "84bc7261372e0415cc1c38bce776f50dae1aaef27bd59816401f7518c2c0fd01",
       "pack": {
         "crawl": true,
         "edges": {
@@ -513,7 +513,7 @@
     "fabric_workspaces/ws_core_governance/env_santolaya_prod.environment/setting/spark": {
       "beacon_chain_hash": "8ff0c2ee5d1e4246536d0612e23402dd4bd8e5add87254dcd2f474631bcd2629",
       "beacon_hash": "3ad5a9343ce6b332d6341ca0a62939cbe45106ecef6a21160e654b2e4856bf98",
-      "fingerprint": "5dd8f6d1912448a71475490edd94773b760dba11199ce5096a7d5b59cfb132c3",
+      "fingerprint": "1dd459104e926e33f0544b48c321a6ae2f1a8411a6154de37e1ddcc435700b9f",
       "pack": {
         "crawl": true,
         "edges": {
@@ -535,7 +535,7 @@
     "fabric_workspaces/ws_core_governance/libraries": {
       "beacon_chain_hash": "440784280fccc19718f3992250d32b342fbd211ed7857738ed8fbfadfff263da",
       "beacon_hash": "ef15e19d2ef2354441c5f97a8d67d949f6b433ca664879cd20f1df6e867ab4c0",
-      "fingerprint": "5083b0aa4e4cf1ec2e45276c0aa347a6354646203bb22851a07528085b739fd8",
+      "fingerprint": "a0a05578945ba5dff8e9af25bf7d1a6a6c1731caa18fac9a4c5ed34d441cc4be",
       "pack": {
         "crawl": true,
         "edges": {
@@ -557,7 +557,7 @@
     "fabric_workspaces/ws_gold_analytics": {
       "beacon_chain_hash": "bde8b733c3f8b145d81e09ab954fdbd9f1d993cff310894558d6ad6703bcc702",
       "beacon_hash": "5506a5770e546085b70ab18815df738ba3cd419eecf1af4614e0af83c9c06aa9",
-      "fingerprint": "e2e5f85da2595d1cac1be74d22e59f5afc07f4b699f6c5d424a8d1afd7a88590",
+      "fingerprint": "a0874699255965d6278e80c299e5e56a30b7cf5314961bc573231c60c4ced344",
       "pack": {
         "crawl": true,
         "edges": {
@@ -579,7 +579,7 @@
     "fabric_workspaces/ws_gold_analytics/nb_model_kimball_obras.notebook": {
       "beacon_chain_hash": "e4a72fdb2ad7d48cd93ab660838dbfca03c5838dd173dce4ab262e63df93a0e6",
       "beacon_hash": "20fe7688dd8b10b73cbfe768a5bb84774a1031e3d471db14058798db79a7fa05",
-      "fingerprint": "252351b6a1b0781f9083c710e7d51425d1c82099947cf83d5248d5ed354841ea",
+      "fingerprint": "b3bb7cfd3087d3955c73019a0db9de6d341219845eeb800d4367a13917a27f0d",
       "pack": {
         "crawl": true,
         "edges": {
@@ -601,7 +601,7 @@
     "fabric_workspaces/ws_gold_analytics/wh_gold_santolaya.warehouse": {
       "beacon_chain_hash": "f7b6352b7f88153750fc9197bc3576934f30a15fa35a3d7bcd554b45f63ad865",
       "beacon_hash": "7483c0ec30a704db693da1182beec8cdc9af64300baf07e434631cd95072a0b3",
-      "fingerprint": "259336bc3890d75ca93fedc93bdf8db0e5eefda7fd0c5985b14db84db3a44238",
+      "fingerprint": "73412b54746da44ab0e8404679fac08ba1bed8a6b7f3cc56de8ed36bc8ca9e51",
       "pack": {
         "crawl": true,
         "edges": {
@@ -621,7 +621,7 @@
     "scripts": {
       "beacon_chain_hash": "bec0aa7880deb21e2f5162064cbba140e70b67f80090b9f2f7246ef5de003210",
       "beacon_hash": "d236725ac174c56326279ba8de0c15bdd98f853bd2fd5ba329fc73f8ac8a39f1",
-      "fingerprint": "f8d8566341583e51abeb3e277c33c5af0234b1a8aff08f8255b65fa95f519a39",
+      "fingerprint": "f322ae28d095525fce248b53d274e6ac51a586e5351e8cff3b991c0b58299237",
       "pack": {
         "crawl": true,
         "edges": {},
@@ -640,7 +640,7 @@
     "src": {
       "beacon_chain_hash": "98ac1252d59ae427f33430bd2b89584bc0458731919c34b7baba2da1bf3074db",
       "beacon_hash": "addcfad416dbf2ab0a8c4c70a14e7cac020e7fd5ba4fad95824e18f0a03430f2",
-      "fingerprint": "ab750f398ee2ee6c16252b5a0d78c4fd823cbef6f3dd325efa30f593e24d4251",
+      "fingerprint": "7536f74b9176ebb7f36ce1ab9ec85f40245b4261352ba1eb7ce866f28f2b5e0d",
       "pack": {
         "crawl": true,
         "edges": {
@@ -660,7 +660,7 @@
     "src/core": {
       "beacon_chain_hash": "829405288781fa9f1a809c6c56043c2ec0247b5f9f44d89c27104a8ebb320146",
       "beacon_hash": "216ca5fb1a473346db22eef1a7dbdc12a2503b316191de44b943c7b932f0044c",
-      "fingerprint": "4d8a6ab122c5f1d38a14cc89709c6cbbd1e0560ea4411cb8376fd83578cee063",
+      "fingerprint": "9734dbfa92aa7de948337a0262ff4799d7e44da05ad60359ade7558ce5d4255c",
       "pack": {
         "crawl": true,
         "edges": {
@@ -668,7 +668,7 @@
         },
         "files": [
           "context_runtime.py(~5713t)",
-          "fwengine.py(~45141t)"
+          "fwengine.py(~45143t)"
         ],
         "focus": "src/core",
         "idir_pack": "6.0",
@@ -683,7 +683,7 @@
     "tests": {
       "beacon_chain_hash": "aae40b2cfe5b9735d23cd69fd2a9f23197625aceb5900b25cbb949c9de4f7b2a",
       "beacon_hash": "7e91a77a62b63ae5520c615174a49a5545610e1dd472efcac76c7e86bcd1079a",
-      "fingerprint": "1945055482067487d0dc5d3d162ae6f647172f0270953eed72032cabe88bc66d",
+      "fingerprint": "7bbb60004a3c612819b5bf1ed1902764ffdb2971ab555922aa97514b284893eb",
       "pack": {
         "crawl": true,
         "edges": {},
@@ -701,7 +701,7 @@
       }
     }
   },
-  "generation": "ef37dec4c2944d21",
+  "generation": "04c7d01f4202e5d1",
   "policy_stamp": [
     [
       ".agentignore",
@@ -715,8 +715,8 @@
     ],
     [
       "config/context_policy.json",
-      3072,
-      1793477321772487600
+      3078,
+      1793968015409400500
     ]
   ],
   "version": "6.0.0"

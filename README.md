@@ -147,7 +147,7 @@ iDirectoryFabric integrates seamlessly with **Antigravity** through specialized 
 
 - **Skill Activation:** Invoke `/fabric` in Antigravity chat to trigger Fabric governance, CU audits, and Medallion classification.
 - **Context Preservation:** Atomic context packs (`Tier 1A`) ensure agents edit complex PySpark notebooks or TMDL files without loading extraneous datasets or burning context window tokens.
-- **DNA Vector:** The architectural vector `01_seed/seed-idirectory-master.md` serves as the infallible reference for system design, business rules, and capacity limits.
+- **DNA Vector:** The architectural vector `01_seed/seed-idirectoryfabric-master.md` serves as the infallible reference for system design, business rules, and capacity limits.
 
 ---
 

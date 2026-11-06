@@ -1,9 +1,9 @@
 {
   "artifact_kind": "master",
-  "inputs_hash": "a40b7d931368a34b7801140ddf88393e192c5bd4425e747b38db9937f63aebb2",
-  "output_hash": "3e0b9d8e53d4592510a5b89c1a72dd693f68fa28792f1833739d5dea48f7349d",
+  "inputs_hash": "9c195488354a51114645827e0ebd36b7b5355ace5766237e674ee7c44afe796d",
+  "output_hash": "d411afe2e9523cc77babad15a694ed055af729f161440851ed7bcc76a1ff71f9",
   "present": true,
-  "published_at": "2026-10-31T23:02:23.588692+00:00",
+  "published_at": "2026-11-06T12:29:15.107445+00:00",
   "state": "validated",
   "version": "6.0.0"
 }

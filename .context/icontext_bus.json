@@ -4,20 +4,20 @@
     "l0_idirectory": {
       "active_nodes_count": 16,
       "contracts_ast_hash": "561ea4f996456618dbdee0e7436fa6a4db49c1798c1ef58d29688d5f59361a74",
-      "inputs_hash": "ef37dec4c2944d21c36fd66ffb49d920eca13a75e19a6068356f256ae1e6d4c7",
+      "inputs_hash": "04c7d01f4202e5d132a61420374409d9efe63dd86e60070c916c70b50b8896f9",
       "present": true,
       "pruned_nodes_count": 2,
-      "published_at": "2026-11-06T12:14:47.180025+00:00",
+      "published_at": "2026-11-06T12:29:24.394767+00:00",
       "state": "recorded",
-      "topology_hash": "4f58a65f28e45088a422188b2bb056a5ea7d5272f2b4b4ab3614cefbd25fd75c",
+      "topology_hash": "b2fa842bf84c52587f16a8d952e2ed812ff58b17f5911e84678b8088fc8e9709",
       "version": "6.0.0"
     },
     "l1_thinkingseed": {
       "artifact_kind": "master",
-      "inputs_hash": "a40b7d931368a34b7801140ddf88393e192c5bd4425e747b38db9937f63aebb2",
-      "output_hash": "3e0b9d8e53d4592510a5b89c1a72dd693f68fa28792f1833739d5dea48f7349d",
+      "inputs_hash": "9c195488354a51114645827e0ebd36b7b5355ace5766237e674ee7c44afe796d",
+      "output_hash": "d411afe2e9523cc77babad15a694ed055af729f161440851ed7bcc76a1ff71f9",
       "present": true,
-      "published_at": "2026-10-31T23:02:23.588692+00:00",
+      "published_at": "2026-11-06T12:29:15.107445+00:00",
       "state": "validated",
       "version": "6.0.0"
     },
@@ -48,5 +48,5 @@
   },
   "project": "iDirectoryFabric",
   "protocol_version": "6.0.0",
-  "updated_at": "2026-11-06T12:14:47.188177+00:00"
+  "updated_at": "2026-11-06T12:29:24.401747+00:00"
 }

@@ -23,7 +23,8 @@ def run_fabric_cli(argv: List[str], repo_root: Path) -> int:
         return 0
 
     mode = "audit"
-    target_path = repo_root
+    default_workspace = repo_root / "fabric_workspaces"
+    target_path = default_workspace if default_workspace.exists() else repo_root
 
     idx = 0
     while idx < len(argv):

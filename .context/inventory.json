@@ -66,19 +66,19 @@
       ]
     },
     "01_seed/.context.yaml": {
-      "sha256": "f5dfa21252c0288b8b6607c6da80f7016c1a2f4828486e1d7a19dc421191a23c",
-      "size": 426,
+      "sha256": "9673332728b476cf30565265a18c7f18cb8d41dff064c020334f886c5b227b94",
+      "size": 432,
       "stat": [
-        426,
-        1793967284412320700
+        432,
+        1793968161320762600
       ]
     },
-    "01_seed/seed-idirectory-master.md": {
-      "sha256": "4e14bc147bf27b96932f99af603f9ff533ef30bb96b3e2685bd118848eed4e3d",
-      "size": 19703,
+    "01_seed/seed-idirectoryfabric-master.md": {
+      "sha256": "035351264dd9d3b16c60fb6e918446b3cc5f46136fad2cac346f627b363afc21",
+      "size": 17468,
       "stat": [
-        19703,
-        1793966506080577900
+        17468,
+        1793967885350632100
       ]
     },
     "AGENTS.md": {
@@ -137,21 +137,21 @@
       ]
     },
     "README.md": {
-      "semantic_sha256": "a3e4386484eceb248d01ac5f38fbd5c7148d3d86e76e1fb9b9cfc7335f8a38f5",
-      "sha256": "2f0079f9a7741c11c35a829847713006f7a66225ecb9961af9fe233013d00e82",
-      "size": 14233,
+      "semantic_sha256": "0a4c3be68cf81ee4aeb811e013a8272ad55edf73269a8adca05edc25fc66fb76",
+      "sha256": "6d95e96dc823b8b4df77828ca28e1930d3c4ee84282e5f587ab7a82481714dd2",
+      "size": 14239,
       "stat": [
-        14233,
-        1793967085358090600
+        14239,
+        1793968071074135800
       ]
     },
     "README_ES.md": {
-      "semantic_sha256": "f7bced10f956d37473365574a919d53030357997643f0ca7124b830c16299b48",
-      "sha256": "c356217f27538960f9748a5e6242fe03dbfd830bc9f0a50dfd44044457ce0725",
-      "size": 14685,
+      "semantic_sha256": "fbc05bbd98cf6c911cd640809f7c99d9e9bf1e84f13cc77d724fe3a03ccf03a5",
+      "sha256": "dbcb7d2c3036e552e35e588cadef607602368305db5b8faa65222c1147a6b690",
+      "size": 14691,
       "stat": [
-        14685,
-        1793967085577709800
+        14691,
+        1793968081312267300
       ]
     },
     "artifacts/.context.yaml": {
@@ -263,7 +263,7 @@
       "size": 380,
       "stat": [
         380,
-        1793967284416309700
+        1793968161326737100
       ]
     },
     "artifacts/plans/active/plan_reingenieria_v4.md": {
@@ -295,15 +295,15 @@
       "size": 377,
       "stat": [
         377,
-        1793967284431802900
+        1793968161344686400
       ]
     },
     "config/context_policy.json": {
-      "sha256": "f2f96f3e6119993146fb332930f770820279c3befd968527d57438f3532981b4",
-      "size": 3072,
+      "sha256": "d465b8b6b601e03a74685da25cbd2de31c105918fadaadfb1c49430851696528",
+      "size": 3078,
       "stat": [
-        3072,
-        1793477321772487600
+        3078,
+        1793968015409400500
       ]
     },
     "docs/.context.yaml": {
@@ -319,7 +319,7 @@
       "size": 350,
       "stat": [
         350,
-        1793967284425820000
+        1793968161337719400
       ]
     },
     "docs/architecture/Directorio de carpetas.md": {
@@ -351,7 +351,7 @@
       "size": 351,
       "stat": [
         351,
-        1793967284429845500
+        1793968161342692300
       ]
     },
     "docs/specs/.context.yaml": {
@@ -359,7 +359,7 @@
       "size": 333,
       "stat": [
         333,
-        1793967284427814300
+        1793968161339700500
       ]
     },
     "docs/specs/icontext-v6.md": {
@@ -639,7 +639,7 @@
       "size": 368,
       "stat": [
         368,
-        1793967284434795600
+        1793968161347680700
       ]
     },
     "schemas/backlog.schema.json": {
@@ -719,7 +719,7 @@
       "size": 318,
       "stat": [
         318,
-        1793967284437886400
+        1793968161350673700
       ]
     },
     "scripts/generate_benchmark_reports.py": {
@@ -847,7 +847,7 @@
       "size": 335,
       "stat": [
         335,
-        1793967284414314900
+        1793968161324742300
       ]
     },
     "src/core/context_runtime.py": {
@@ -1084,11 +1084,11 @@
           "main"
         ]
       },
-      "sha256": "ea6c949eee311d40a3664795cb0cb69364f767c9007bb8e2a161ae6246af582e",
-      "size": 162511,
+      "sha256": "1407657c2b91fe7e413963a01cdca709b3424371a72ab4b5889bb50ed0692e17",
+      "size": 162517,
       "stat": [
-        162511,
-        1793967258967523400
+        162517,
+        1793968031033600700
       ]
     },
     "src/fabric/.context.yaml": {
@@ -1231,7 +1231,7 @@
       "size": 318,
       "stat": [
         318,
-        1793967284439881900
+        1793968161352668300
       ]
     },
     "tests/test_fwengine.py": {
@@ -1327,7 +1327,7 @@
       "size": 288,
       "stat": [
         288,
-        1793967284441875900
+        1793968161354686200
       ]
     },
     "tools/build_runtime.py": {
@@ -1360,7 +1360,7 @@
       ]
     }
   },
-  "inputs_hash": "ef37dec4c2944d21c36fd66ffb49d920eca13a75e19a6068356f256ae1e6d4c7",
-  "policy_hash": "607d08c9f22e65dd3327aaf3e0fcc576963ef0bbc70db91b9433f25897a7675e",
+  "inputs_hash": "04c7d01f4202e5d132a61420374409d9efe63dd86e60070c916c70b50b8896f9",
+  "policy_hash": "b0ab2274cf3f94e2a794b53a82bee9f3d69c4d34d5af282a0476043eea50e5f4",
   "version": "6.0.0"
 }

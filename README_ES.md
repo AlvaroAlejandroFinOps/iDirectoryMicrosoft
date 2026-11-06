@@ -147,7 +147,7 @@ iDirectoryFabric se acopla con **Antigravity** mediante skills especializadas y 
 
 - **Activación de Skill:** Invoca `/fabric` en el chat de Antigravity para iniciar auditorías de CUs, remediación y clasificación Medallón.
 - **Preservación de Ventana de Contexto:** Los paquetes atómicos (`Tier 1A`) permiten a los agentes editar notebooks o definiciones TMDL complejas sin sobrecargar la ventana de contexto.
-- **Vector ADN Arquitectónico:** El archivo `01_seed/seed-idirectory-master.md` actúa como la referencia canónica para diseño de sistemas, reglas de negocio y límites de capacidad.
+- **Vector ADN Arquitectónico:** El archivo `01_seed/seed-idirectoryfabric-master.md` actúa como la referencia canónica para diseño de sistemas, reglas de negocio y límites de capacidad.
 
 ---
 
